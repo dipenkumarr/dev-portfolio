@@ -54,7 +54,7 @@ export default function Intro() {
 			</motion.h1>
 
 			<motion.div
-				className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
+				className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-sm md:text-lg font-medium"
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ delay: 0.1 }}
@@ -68,7 +68,7 @@ export default function Intro() {
 				</Link>
 
 				<a
-					className="group bg-white text-black border border-black/20 px-7 py-3 flex items-center cursor-pointer justify-center gap-2 rounded-full outline-none hover:scale-105 active:scale-95 transition-all"
+					className="group bg-white text-black border border-black/20 w-52 md:w-auto px-7 py-3 flex items-center cursor-pointer justify-center gap-2 rounded-full outline-none hover:scale-105 active:scale-95 transition-all"
 					href="/Dipen_Resume.pdf"
 					download
 				>
@@ -76,21 +76,23 @@ export default function Intro() {
 					<HiDownload className="opacity-80 group-hover:translate-y-1 transition-all" />
 				</a>
 
-				<a
-					className="bg-white text-black text-2xl border border-black/20 p-4 flex items-center justify-center gap-2 rounded-full cursor-pointer outline-none hover:scale-110 active:scale-100 transition-all"
-					href="https://linkedin.com/in/dipen-kumar"
-					target="_blank"
-				>
-					<BsLinkedin />
-				</a>
+				<div className="flex gap-3">
+					<a
+						className="bg-white text-black text-2xl border border-black/20 p-4 flex items-center justify-center gap-2 rounded-full cursor-pointer outline-none hover:scale-110 active:scale-100 transition-all"
+						href="https://linkedin.com/in/dipen-kumar"
+						target="_blank"
+					>
+						<BsLinkedin />
+					</a>
 
-				<a
-					className="bg-white text-black text-2xl border border-black/20 p-4 flex items-center justify-center gap-2 rounded-full cursor-pointer outline-none hover:scale-110 active:scale-100 transition-all"
-					href="https://github.com/dipenkumarr"
-					target="_blank"
-				>
-					<FaGithub />
-				</a>
+					<a
+						className="bg-white text-black text-2xl border border-black/20 p-4 flex items-center justify-center gap-2 rounded-full cursor-pointer outline-none hover:scale-110 active:scale-100 transition-all"
+						href="https://github.com/dipenkumarr"
+						target="_blank"
+					>
+						<FaGithub />
+					</a>
+				</div>
 			</motion.div>
 		</section>
 	);
