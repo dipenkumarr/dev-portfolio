@@ -1,6 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaGraduationCap, FaReact, FaResearchgate } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 export const links = [
@@ -32,28 +32,20 @@ export const links = [
 
 export const experiencesData = [
 	{
-		title: "Graduated bootcamp",
-		location: "Miami, FL",
+		title: "Bachelor of Science Honors in Computer Science",
+		location: "University of Alberta, Edmonton, CA",
 		description:
-			"I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-		icon: React.createElement(LuGraduationCap),
-		date: "2019",
+			"Pursuing a Bachelor of Science Honors in Computer Science with a GPA of 3.6. Relevant coursework includes Python and Systems Programming, Databases, Machine Learning, AI, Data Structures & Algorithms, and more.",
+		icon: React.createElement(FaGraduationCap),
+		date: "Sep 2022 - May 2026",
 	},
 	{
-		title: "Front-End Developer",
-		location: "Orlando, FL",
+		title: "Summer Software/Research Intern",
+		location: "University of Alberta - ANCL LAB, Edmonton, AB",
 		description:
-			"I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-		icon: React.createElement(CgWorkAlt),
-		date: "2019 - 2021",
-	},
-	{
-		title: "Full-Stack Developer",
-		location: "Houston, TX",
-		description:
-			"I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-		icon: React.createElement(FaReact),
-		date: "2021 - present",
+			"Improved the structure and readability of code for autonomous navigation algorithms using ROS, Linux, and C++. Initiated the containerization of applications using Docker, reducing setup time by more than 50%. Utilized Git and GitHub for version control and collaboration.",
+		icon: React.createElement(FaResearchgate),
+		date: "May 2024 - June 2024",
 	},
 ] as const;
 
@@ -107,23 +99,26 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-	"HTML",
-	"CSS",
+	"Python",
 	"JavaScript",
 	"TypeScript",
-	"React",
+	"C/C++",
+	"SQL (MySQL, SQLite)",
+	"HTML",
+	"CSS",
+	"React.js",
 	"Next.js",
 	"Node.js",
+	"Express.js",
+	"Tailwind CSS",
+	"Numpy",
+	"PyTorch",
 	"Git",
-	"Tailwind",
-	"Prisma",
+	"GitHub",
+	"VS Code",
+	"Redux-Toolkit",
+	"Linux/Unix",
+	"Docker",
 	"MongoDB",
-	"Redux",
-	"GraphQL",
-	"Apollo",
-	"Express",
-	"PostgreSQL",
-	"Python",
-	"Django",
-	"Framer Motion",
+	"Java",
 ] as const;
