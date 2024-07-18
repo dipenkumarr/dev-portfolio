@@ -6,16 +6,18 @@ import SectionHeading from "./section-heading";
 export default function About() {
 	return (
 		<motion.section
-			className="mb-28 max-w-5xl text-center leading-8 sm:mb-40 text-base md:text-lg"
+			className="mb-28 max-w-5xl text-center leading-8 sm:mb-40 text-base md:text-lg scroll-mt-32"
 			initial={{ opacity: 0, y: 100 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.175 }}
+			id="about"
 		>
 			<SectionHeading>About Me</SectionHeading>
 			<p className="mb-3">
-				I am <span className="font-bold">Dipen Kumar Maheshwari</span>,
+				I am{" "}
+				<span className="font-semibold">Dipen Kumar Maheshwari</span>,
 				currently pursuing a{" "}
-				<span className="font-medium">
+				<span className="font-semibold">
 					Bachelor of Science Honors in Computer Science{" "}
 				</span>
 				at the{" "}
@@ -71,8 +73,7 @@ export default function About() {
 				and love the feeling of finding solutions to complex problems.
 				My projects often involve creating responsive, user-friendly
 				interfaces and implementing secure, efficient back-end systems.
-				I am currently seeking a
-				<span className="font-semibold"> full-time position</span> as a
+				I am currently seeking
 				<span className="font-semibold">
 					{" "}
 					Software Developer Internships

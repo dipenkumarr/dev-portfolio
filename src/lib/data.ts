@@ -59,25 +59,50 @@ export const experiencesData = [
 
 export const projectsData = [
 	{
-		title: "CorpComment",
+		title: "Bloom.ai",
 		description:
-			"I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-		tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-		// imageUrl: corpcommentImg,
+			"Built Bloom.ai, a full-stack web application leveraging Next.js, React, and TypeScript, that facilitates anonymous feedback and incorporates AI-powered message suggestions using Google’s Gemini AI through Vercel AI SDK. Implemented robust backend with MongoDB for data persistence, custom server middleware for enhanced security, and Zod for type validation, while crafting a responsive UI using Tailwind CSS and shadcn/ui.",
+		tags: [
+			"Next.js",
+			"React",
+			"TypeScript",
+			"TailwindCSS",
+			"MongoDB",
+			"Zod",
+			"GeminiAI",
+		],
+		githubUrl: "https://github.com/dipenkumarr/bloom.ai",
+		liveUrl: "https://bloom-ai-three.vercel.app/",
 	},
 	{
-		title: "rmtDev",
+		title: "BlogSpot",
 		description:
-			"Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-		tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-		// imageUrl: rmtdevImg,
+			"Developed a full-stack blogging platform using React for the frontend, integrated with Appwrite for user authentication and data storage. Implemented real-time user authentication flow using Appwrite’s auth service, allowing for secure login, logout, and user data retrieval.",
+		tags: ["React", "Redux-Toolkit", "HTML", "Tailwind CSS", "Appwrite"],
+		githubUrl: "https://github.com/dipenkumarr/BlogSpot",
+		liveUrl: "https://blog-spot-drab.vercel.app/",
 	},
 	{
-		title: "Word Analytics",
+		title: "AudioScribe",
 		description:
-			"A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-		tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-		// imageUrl: wordanalyticsImg,
+			"Developed a dynamic web application leveraging React and Web Workers for real-time audio transcription and translation, utilizing advanced NLP models from Hugging Face for accurate and efficient language processing. Designed a user-friendly interface with responsive design, allowing users to easily transcribe and translate audio content with minimal delay and maximum accuracy.",
+		tags: [
+			"React",
+			"HTML",
+			"Tailwind CSS",
+			"Hugging Face Models",
+			"Transformers",
+		],
+		githubUrl: "https://github.com/dipenkumarr/AudioScribe",
+		liveUrl: "https://audio-scribe.vercel.app/",
+	},
+	{
+		title: "Classification on NotMNIST-RGB and NotMNIST DL using CNN",
+		description:
+			"Developed and implemented a modified LeNet CNN for classification on the RGB NotMNIST dataset, optimizing architecture and weight initialization. Optimized object detection using sliding window detection on the NotMNIST-DL dataset, achieving a detection accuracy of 82.8% and classification accuracy of 97.53%.",
+		tags: ["Python", "PyTorch"],
+		githubUrl: "https://github.com/dipenkumarr/CNN-Classification",
+		liveUrl: "",
 	},
 ] as const;
 
