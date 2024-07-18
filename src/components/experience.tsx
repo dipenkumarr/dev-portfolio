@@ -12,7 +12,6 @@ import { useSectionInView } from "@/lib/hooks";
 
 export default function Experience() {
 	const { ref } = useSectionInView("Experience");
-	console.log(experiencesData);
 	return (
 		<section
 			id="experience"
@@ -31,7 +30,8 @@ export default function Experience() {
 								boxShadow: "none",
 								border: "1px solid rgba(0,0,0, 0.05)",
 								textAlign: "left",
-								padding: "1.3rem 2rem",
+								padding: "1.7rem 2rem",
+								borderRadius: "20px",
 							}}
 							contentArrowStyle={{
 								borderRight: "0.4rem solid #9ca3af",
@@ -47,7 +47,7 @@ export default function Experience() {
 								{item.title}
 							</h3>
 							<p className="font-normal !mt-0">{item.location}</p>
-							<p className="!mt-1 !font-normal text-gray-700">
+							<p className="!mt-1 !font-normal text-gray-800">
 								{item.description}
 							</p>
 						</VerticalTimelineElement>

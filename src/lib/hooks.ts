@@ -15,9 +15,13 @@ export function useSectionInView(
 	const { setActiveSection, timeOfLastClick } = useActiveSection();
 
 	useEffect(() => {
-		if (inView && Date.now() - timeOfLastClick > 1000) {
-			setActiveSection(sectionName);
-		}
+		const timer = setTimeout(() => {
+			if (inView && Date.now() - timeOfLastClick > 1000) {
+				setActiveSection(sectionName);
+			}
+		}, 100);
+
+		return () => clearTimeout(timer);
 	}, [inView, setActiveSection, timeOfLastClick, sectionName]);
 
 	return { ref };

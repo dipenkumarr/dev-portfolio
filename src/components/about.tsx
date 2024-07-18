@@ -8,11 +8,11 @@ import { useEffect } from "react";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-	const { ref } = useSectionInView("About", 0.75);
+	const { ref } = useSectionInView("About", 1, false);
 
 	return (
 		<motion.section
-			className="mb-28 max-w-5xl text-center leading-8 sm:mb-40 text-base md:text-lg scroll-mt-28"
+			className="mb-28 max-w-5xl text-center leading-8 sm:mb-40 text-base md:text-xl scroll-mt-28 sm:scroll-mt-72"
 			initial={{ opacity: 0, y: 100 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.175 }}

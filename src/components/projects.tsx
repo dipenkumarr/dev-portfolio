@@ -12,10 +12,10 @@ export default function Projects() {
 
 	return (
 		<motion.section
-			id="projects"
 			initial={{ opacity: 0, y: 100 }}
 			animate={{ opacity: 1, y: 0 }}
 			className="scroll-mt-32 mb-28"
+			id="projects"
 			ref={ref}
 		>
 			<SectionHeading>My Projects</SectionHeading>

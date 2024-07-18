@@ -12,11 +12,12 @@ import { HiDownload } from "react-icons/hi";
 import { useInView } from "react-intersection-observer";
 
 export default function Intro() {
-	const { ref } = useSectionInView("Home", 0.5, true);
+	const { ref } = useSectionInView("Home", 0.9, true);
 
 	return (
 		<section
-			className="mb-28 max-w-[54rem] text-center sm:mb-0 scroll-mt-[100rem]"
+			className="mb-28 max-w-[54rem] text-center sm:mb-96 scroll-mt-[100rem] sm:mt-96"
+			// className="h-screen flex flex-col items-center justify-center max-w-[54rem] text-center"
 			id="home"
 			ref={ref}
 		>
