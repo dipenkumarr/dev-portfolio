@@ -17,7 +17,7 @@ export default function Header() {
 	return (
 		<header className="z-[999] relative">
 			<motion.div
-				className="fixed mt-2 top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rounded-full border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
+				className="fixed mt-2 top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rounded-full border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950/80 dark:border-black/30"
 				initial={{ y: -100, x: "-50%", opacity: 0 }}
 				animate={{ y: 0, x: "-50%", opacity: 1 }}
 			></motion.div>
@@ -27,16 +27,16 @@ export default function Header() {
 					{links.map((link) => (
 						<motion.li
 							key={link.hash}
-							className="h-3/4 flex items-center justify-center relative"
+							className="h-3/4 flex items-center justify-center relative dark:text-gray-400 dark:hover:text-gray-200"
 							initial={{ y: -100, opacity: 0 }}
 							animate={{ y: 0, opacity: 1 }}
 						>
 							<Link
 								href={link.hash}
 								className={clsx(
-									"flex items-center justify-center w-full px-3 py-3 hover:text-gray-950 transition",
+									"flex items-center justify-center w-full px-3 py-3 hover:text-gray-950 transition dark:text-gray-400 dark:hover:text-gray-300",
 									{
-										"text-black":
+										"text-black dark:text-white":
 											activeSection === link.name,
 									}
 								)}
@@ -49,7 +49,7 @@ export default function Header() {
 
 								{link.name === activeSection && (
 									<motion.span
-										className="bg-gray-200/80 rounded-full absolute inset-0 -z-10"
+										className="bg-gray-200/80 rounded-full absolute inset-0 -z-10 dark:bg-gray-700"
 										layoutId="activeSection"
 										transition={{
 											type: "spring",

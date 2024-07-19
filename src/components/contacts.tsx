@@ -26,11 +26,11 @@ export default function Contacts() {
 			ref={ref}
 		>
 			<SectionHeading>Contact Me</SectionHeading>
-			<p className="text-gray-700 -mt-3">
+			<p className="text-gray-700 sm:text-lg -mt-3 dark:text-white/80">
 				Please contact me directly at{" "}
 				<a
 					href="mailto:dipenkum@ualberta.ca"
-					className="underline text-gray-900"
+					className="underline text-gray-900 dark:text-white/90"
 				>
 					dipenkum@ualberta.ca
 				</a>{" "}
@@ -38,7 +38,7 @@ export default function Contacts() {
 			</p>
 
 			<form
-				className="mt-10 flex flex-col"
+				className="mt-10 flex flex-col dark:text-black/80"
 				action={async (FormData) => {
 					const { data, error } = await sendEmail(FormData);
 					if (error) {
@@ -54,11 +54,11 @@ export default function Contacts() {
 					required
 					maxLength={500}
 					name="senderEmail"
-					className="h-14 p-4 rounded-xl border border-black/10 outline-black"
+					className="h-14 p-4 rounded-xl border border-black/10 outline-black dark:bg-white/85 dark:focus:bg-white transition-all dark:outline-none"
 					placeholder="You Email"
 				/>
 				<textarea
-					className="min-h-52 max-h-96 my-3 px-4 rounded-xl border border-black/10 p-4 outline-black"
+					className="min-h-52 max-h-96 my-3 px-4 rounded-xl border border-black/10 p-4 outline-black dark:bg-white/85 dark:focus:bg-white transition-all dark:outline-none"
 					placeholder="Your Message"
 					required
 					maxLength={5000}

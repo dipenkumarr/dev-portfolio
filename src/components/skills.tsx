@@ -15,11 +15,11 @@ export default function Skills() {
 			ref={ref}
 		>
 			<SectionHeading>Skills</SectionHeading>
-			<ul className="flex gap-3 flex-wrap justify-center text-lg text-gray-800">
+			<ul className="flex gap-3 flex-wrap justify-center text-lg text-gray-800 ">
 				{skillsData.map((skill, index) => (
 					<motion.li
 						key={index}
-						className="bg-white border border-black/10 rounded-xl px-5 py-3"
+						className="bg-white border border-black/10 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/90"
 						initial={{ opacity: 0, y: 100 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						// animate={{ opacity: 1, y: 0 }}
