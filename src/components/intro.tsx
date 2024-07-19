@@ -15,7 +15,7 @@ export default function Intro() {
 
 	return (
 		<section
-			className="mb-28 max-w-[54rem] text-center sm:mb-96 scroll-mt-[100rem] 2xl:my-96"
+			className="mb-28 max-w-[54rem] text-center sm:mb-96 scroll-mt-[100rem] 2xl:my-64"
 			// className="h-screen flex flex-col items-center justify-center max-w-[54rem] text-center"
 			id="home"
 			ref={ref}
