@@ -24,6 +24,7 @@ export default function Skills() {
 						whileInView={{ opacity: 1, y: 0 }}
 						// animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: index * 0.03 }}
+						viewport={{ once: true }}
 					>
 						{skill}
 					</motion.li>

@@ -13,10 +13,11 @@ import { useInView } from "react-intersection-observer";
 
 export default function Intro() {
 	const { ref } = useSectionInView("Home", 0.9, true);
+	const { setActiveSection, setTimeOfLastClick } = useActiveSection();
 
 	return (
 		<section
-			className="mb-28 max-w-[54rem] text-center sm:mb-96 scroll-mt-[100rem] sm:mt-96"
+			className="mb-28 max-w-[54rem] text-center sm:mb-96 scroll-mt-[100rem] 2xl:my-96"
 			// className="h-screen flex flex-col items-center justify-center max-w-[54rem] text-center"
 			id="home"
 			ref={ref}
@@ -34,6 +35,7 @@ export default function Intro() {
 							width="192"
 							height="192"
 							className="h-28 w-28 rounded-full object-cover shadow-xl border-[0.35rem] border-white"
+							priority
 						/>
 					</motion.div>
 					<motion.span
@@ -73,6 +75,10 @@ export default function Intro() {
 				<Link
 					href="#contact"
 					className="group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none hover:scale-105 active:scale-95 hover:bg-gray-950 transition-all"
+					onClick={() => {
+						setActiveSection("Contact");
+						setTimeOfLastClick(Date.now());
+					}}
 				>
 					Contact me here{" "}
 					<BsArrowRight className="opacity-80 group-hover:translate-x-1 transition-all" />
