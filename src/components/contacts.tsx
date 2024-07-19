@@ -2,13 +2,9 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { format } from "path";
 import { sendEmail } from "@/actions/sendEmail";
-import { useFormStatus } from "react-dom";
-import { LuLoader2 } from "react-icons/lu";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 

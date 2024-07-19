@@ -1,6 +1,5 @@
 "use client";
 
-import { links } from "@/lib/data";
 import type { SectionName } from "@/lib/types";
 import React, { createContext, useState } from "react";
 

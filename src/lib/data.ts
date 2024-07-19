@@ -1,7 +1,5 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaGraduationCap, FaReact, FaResearchgate } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { FaGraduationCap, FaResearchgate } from "react-icons/fa";
 
 export const links = [
 	{
