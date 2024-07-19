@@ -57,7 +57,8 @@ export default function Intro() {
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}
 			>
-				<span className="font-bold">Hello, I'm Dipen Kumar.</span> I'm a{" "}
+				<span className="font-bold">Hello, I&apos;m Dipen Kumar.</span>{" "}
+				I&apos;m a{" "}
 				<span className="font-bold">Computer Science Honors </span>
 				Student at the{" "}
 				<span className="font-bold">University of Alberta.</span> I
