@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { projectsData } from "@/lib/data";
 import SectionHeading from "./section-heading";
@@ -19,11 +18,17 @@ export default function Projects() {
 			ref={ref}
 		>
 			<SectionHeading>My Projects</SectionHeading>
-
 			<div className="sm:grid sm:grid-cols-2 sm:gap-6">
 				{projectsData.map((project, index) => (
 					<React.Fragment key={index}>
-						<Project {...project} />
+						{index === projectsData.length - 1 &&
+						projectsData.length % 2 !== 0 ? (
+							<div className="sm:col-span-2 sm:flex sm:justify-center">
+								<Project {...project} />
+							</div>
+						) : (
+							<Project {...project} />
+						)}
 					</React.Fragment>
 				))}
 			</div>

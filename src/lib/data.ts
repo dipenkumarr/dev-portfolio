@@ -94,6 +94,14 @@ export const projectsData = [
 		githubUrl: "https://github.com/dipenkumarr/CNN-Classification",
 		liveUrl: "",
 	},
+	{
+		title: "ChatPDF",
+		description:
+			"Developed ChatPDF, a Streamlit web app powered by LangChain and Hugging Face models. Enabled users to upload PDFs, ask context-aware questions, and receive informative answers. Utilized NLP techniques for efficient information retrieval, enhancing user interaction with PDF documents",
+		tags: ["Python", "LangChain", "Hugging Face API", "Streamlit"],
+		githubUrl: "https://github.com/dipenkumarr/ChatPDF",
+		liveUrl: "",
+	},
 ] as const;
 
 export const skillsData = [
