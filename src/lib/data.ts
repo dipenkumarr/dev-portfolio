@@ -65,6 +65,22 @@ export const projectsData = [
 		liveUrl: "https://bloom-ai-three.vercel.app/",
 	},
 	{
+		title: "SurfWeb RAG-Based Web Interaction Tool",
+		description:
+			"Developed a web application that allows users to interact with any website by entering its URL, creating searchable indexes, and enabling chat-based queries using a custom vector and redis database with Upstash. Leveraged Tailwind CSS for UI design and Vercel AI SDK to enhance the user experience, facilitating efficient content retrieval and interaction across diverse websites.",
+		tags: [
+			"Next.js",
+			"React",
+			"TypeScript",
+			"TailwindCSS",
+			"Vector Database",
+			"Redis",
+			"Vercel AI SDK",
+		],
+		githubUrl: "https://github.com/dipenkumarr/SurfWeb-RAG-LLama",
+		liveUrl: "",
+	},
+	{
 		title: "BlogSpot",
 		description:
 			"Developed a full-stack blogging platform using React for the frontend, integrated with Appwrite for user authentication and data storage. Implemented real-time user authentication flow using Appwrite’s auth service, allowing for secure login, logout, and user data retrieval.",
