@@ -78,7 +78,7 @@ export const projectsData = [
 			"Vercel AI SDK",
 		],
 		githubUrl: "https://github.com/dipenkumarr/SurfWeb-RAG-LLama",
-		liveUrl: "",
+		liveUrl: "https://surf-web.vercel.app/",
 	},
 	{
 		title: "BlogSpot",
