@@ -16,7 +16,7 @@ export default function SectionDivider() {
 		// ></motion.div>
 		<Link href={"#about"}>
 			<motion.button
-				className="my-24 p-14 h-16 w-1 rounded-full hidden sm:block animate-bounce"
+				className="mb-24 p-14 h-16 w-1 rounded-full hidden sm:block animate-bounce"
 				onClick={() => setActiveSection("About")}
 				initial={{ scale: 0, opacity: 0 }}
 				animate={{ scale: 1, opacity: 1 }}
