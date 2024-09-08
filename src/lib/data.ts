@@ -49,6 +49,24 @@ export const experiencesData = [
 
 export const projectsData = [
 	{
+		title: "UniWays - Google Hacks Winner",
+		description:
+			" Led a team of three to develop a full-stack campus navigation app using Next.js, React, and TypeScript, significantly reducing students’ travel time by up to 20% with Google Maps API integration and pathway suggestions. Implemented secure user authentication via Clerk OAuth, enabling secure login and personalized schedules, stored in a Prisma-managed PostgrsSQL database. Designed a user-centric, responsive interface, using TailwindCSS, enhancing user experience with geocoding for precise location mapping.",
+		tags: [
+			"Next.js",
+			"React",
+			"TypeScript",
+			"Google Maps API",
+			"Prisma",
+			"PostgreSQL",
+			"Clerk",
+			"OAuth",
+			"TailwindCSS",
+		],
+		githubUrl: "https://github.com/dipenkumarr/UniWays-GHacks",
+		liveUrl: "",
+	},
+	{
 		title: "Bloom.ai",
 		description:
 			"Built Bloom.ai, a full-stack web application leveraging Next.js, React, and TypeScript, that facilitates anonymous feedback and incorporates AI-powered message suggestions using Google’s Gemini AI through Vercel AI SDK. Implemented robust backend with MongoDB for data persistence, custom server middleware for enhanced security, and Zod for type validation, while crafting a responsive UI using Tailwind CSS and shadcn/ui.",
@@ -81,12 +99,12 @@ export const projectsData = [
 		liveUrl: "https://surf-web.vercel.app/",
 	},
 	{
-		title: "BlogSpot",
+		title: "Classification on NotMNIST-RGB and NotMNIST DL using CNN",
 		description:
-			"Developed a full-stack blogging platform using React for the frontend, integrated with Appwrite for user authentication and data storage. Implemented real-time user authentication flow using Appwrite’s auth service, allowing for secure login, logout, and user data retrieval.",
-		tags: ["React", "Redux-Toolkit", "HTML", "Tailwind CSS", "Appwrite"],
-		githubUrl: "https://github.com/dipenkumarr/BlogSpot",
-		liveUrl: "https://blog-spot-drab.vercel.app/",
+			"Developed and implemented a modified LeNet CNN for classification on the RGB NotMNIST dataset, optimizing architecture and weight initialization. Optimized object detection using sliding window detection on the NotMNIST-DL dataset, achieving a detection accuracy of 82.8% and classification accuracy of 97.53%.",
+		tags: ["Python", "PyTorch"],
+		githubUrl: "https://github.com/dipenkumarr/CNN-Classification",
+		liveUrl: "",
 	},
 	{
 		title: "AudioScribe",
@@ -103,12 +121,12 @@ export const projectsData = [
 		liveUrl: "https://audio-scribe.vercel.app/",
 	},
 	{
-		title: "Classification on NotMNIST-RGB and NotMNIST DL using CNN",
+		title: "BlogSpot",
 		description:
-			"Developed and implemented a modified LeNet CNN for classification on the RGB NotMNIST dataset, optimizing architecture and weight initialization. Optimized object detection using sliding window detection on the NotMNIST-DL dataset, achieving a detection accuracy of 82.8% and classification accuracy of 97.53%.",
-		tags: ["Python", "PyTorch"],
-		githubUrl: "https://github.com/dipenkumarr/CNN-Classification",
-		liveUrl: "",
+			"Developed a full-stack blogging platform using React for the frontend, integrated with Appwrite for user authentication and data storage. Implemented real-time user authentication flow using Appwrite’s auth service, allowing for secure login, logout, and user data retrieval.",
+		tags: ["React", "Redux-Toolkit", "HTML", "Tailwind CSS", "Appwrite"],
+		githubUrl: "https://github.com/dipenkumarr/BlogSpot",
+		liveUrl: "https://blog-spot-drab.vercel.app/",
 	},
 	{
 		title: "ChatPDF",
@@ -124,6 +142,7 @@ export const skillsData = [
 	"Python",
 	"JavaScript",
 	"TypeScript",
+	"Java",
 	"C/C++",
 	"SQL (MySQL, SQLite)",
 	"HTML",
@@ -139,8 +158,8 @@ export const skillsData = [
 	"GitHub",
 	"VS Code",
 	"Redux-Toolkit",
+	"Postman",
 	"Linux/Unix",
 	"Docker",
 	"MongoDB",
-	"Java",
 ] as const;
