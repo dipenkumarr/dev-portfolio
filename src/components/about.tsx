@@ -17,70 +17,43 @@ export default function About() {
 			ref={ref}
 		>
 			<SectionHeading>About Me</SectionHeading>
-			<p className="mb-3">
-				I am{" "}
-				<span className="font-semibold">Dipen Kumar Maheshwari</span>,
-				currently pursuing a{" "}
-				<span className="font-semibold">
-					Bachelor of Science Honors in Computer Science{" "}
-				</span>
-				at the{" "}
-				<span className="font-medium">University of Alberta</span>. My
-				education has equipped me with a strong foundation in topics
-				like{" "}
-				<span className="font-medium">
-					Python and Systems Programming
-				</span>
-				, <span className="font-medium">Databases</span>,{" "}
-				<span className="font-medium">Machine Learning</span>,{" "}
-				<span className="font-medium">AI</span>,{" "}
-				<span className="font-medium">
-					Data Structures &amp; Algorithms
-				</span>
-				, and more. I have hands-on experience as a{" "}
-				<span className="font-medium">
-					Summer Software/Research Intern
-				</span>
-				at the{" "}
-				<span className="font-medium">
-					University of Alberta&apos;s ANCL LAB
-				</span>
-				, where I improved the structure and readability of code for
-				autonomous navigation algorithms using{" "}
-				<span className="font-medium">ROS</span>,{" "}
-				<span className="font-medium">Linux</span>, and{" "}
-				<span className="font-medium">C++</span>. I also initiated the
-				containerization of applications using{" "}
-				<span className="font-medium">Docker</span>, which significantly
-				reduced setup time for team members.
+			<p className="mb-5">
+				Hello! I&apos;m Dipen Kumar Maheshwari, a passionate and driven
+				Computer Science Honors student at the University of Alberta,
+				currently pursuing a Bachelor of Science degree. With a solid
+				academic foundation and hands-on experience, I specialize in
+				software development, particularly in full-stack web development
+				and systems programming.
 			</p>
-			<p className="mb-3">
-				My core stack includes{" "}
-				<span className="font-medium">
-					React, Next.js, Node.js, and MongoDB
-				</span>
-				, and I am also proficient with{" "}
-				<span className="font-medium">TypeScript</span>,{" "}
-				<span className="font-medium">Prisma</span>, and other modern
-				web development tools. I have built full-stack applications like{" "}
-				<span className="font-medium">Bloom.ai</span> and{" "}
-				<span className="font-medium">BlogSpot</span>, leveraging
-				technologies like{" "}
-				<span className="font-medium">TailwindCSS</span>,{" "}
-				<span className="font-medium">Appwrite</span>, and advanced NLP
-				models from <span className="font-medium">Hugging Face</span>.
+			<p className="mb-5">
+				I&apos;ve had the privilege of interning as a Software/Research
+				Intern at the University of Alberta&apos;s ANCL Lab, where I
+				improved autonomous navigation algorithms and reduced
+				development setup time by 50% using Docker, ROS, Linux, and C++.
+				This experience taught me the importance of scalable, efficient
+				solutions, and I applied these lessons to my projects, including
+				full-stack applications like Bloom.ai and UniWays.
 			</p>
-			<p className="mb-3">
-				I am passionate about the problem-solving aspect of programming
-				and love the feeling of finding solutions to complex problems.
-				My projects often involve creating responsive, user-friendly
-				interfaces and implementing secure, efficient back-end systems.
-				I am currently seeking{" "}
-				<span className="font-semibold">
-					Software Developer Internships
+			<p className="mb-5">
+				My core technical stack includes React, Next.js, Node.js, and
+				MongoDB, with additional proficiency in TypeScript, Prisma, and
+				modern tools like TailwindCSS and Docker. I have a passion for
+				problem-solving and enjoy working on complex challenges that
+				require robust, scalable back-end systems paired with intuitive,
+				user-friendly front-ends. My work often involves integrating
+				real-time data and ensuring security and performance in
+				everything I build.
+			</p>
+
+			<p className="mb-5">
+				Currently,{" "}
+				<span className="underline underline-offset-4">
+					I&apos;m seeking Software Engineering Internships{" "}
 				</span>
-				. I am always eager to learn new technologies and improve my
-				skills.
+				where I can continue to develop my skills, contribute to
+				meaningful projects, and work in dynamic teams. I am always
+				eager to learn and grow, constantly exploring new technologies
+				to enhance my development toolkit.
 			</p>
 		</motion.section>
 	);
