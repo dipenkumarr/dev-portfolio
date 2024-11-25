@@ -37,6 +37,14 @@ export default function Intro() {
 							className="absolute bottom-0 right-0 text-4xl"
 							initial={{ scale: 0, opacity: 0 }}
 							animate={{ scale: 1, opacity: 1 }}
+							whileHover={{
+								rotate: [0, 30, -30, 30, -30, 0],
+								transition: {
+									duration: 1.5,
+									repeat: Infinity,
+									ease: "linear",
+								},
+							}}
 							transition={{
 								type: "spring",
 								duration: 0.7,

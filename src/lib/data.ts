@@ -65,6 +65,7 @@ export const projectsData = [
 		],
 		githubUrl: "https://github.com/dipenkumarr/UniWays-GHacks",
 		liveUrl: "",
+		imageUrl: "/UniWays.jpeg",
 	},
 	{
 		title: "Bloom.ai",
@@ -81,6 +82,7 @@ export const projectsData = [
 		],
 		githubUrl: "https://github.com/dipenkumarr/bloom.ai",
 		liveUrl: "https://bloom-ai-three.vercel.app/",
+		imageUrl: "/bloom_ai.jpeg",
 	},
 	{
 		title: "SurfWeb RAG-Based Web Interaction Tool",
@@ -97,6 +99,7 @@ export const projectsData = [
 		],
 		githubUrl: "https://github.com/dipenkumarr/SurfWeb-RAG-LLama",
 		liveUrl: "https://surf-web.vercel.app/",
+		imageUrl: "/SurfWeb.jpeg",
 	},
 	{
 		title: "Classification on NotMNIST-RGB and NotMNIST DL using CNN",
@@ -105,6 +108,7 @@ export const projectsData = [
 		tags: ["Python", "PyTorch"],
 		githubUrl: "https://github.com/dipenkumarr/CNN-Classification",
 		liveUrl: "",
+		imageUrl: "/CNN.jpeg",
 	},
 	{
 		title: "AudioScribe",
@@ -119,6 +123,7 @@ export const projectsData = [
 		],
 		githubUrl: "https://github.com/dipenkumarr/AudioScribe",
 		liveUrl: "https://audio-scribe.vercel.app/",
+		imageUrl: "/AudioScribe.jpeg",
 	},
 	{
 		title: "BlogSpot",
@@ -127,6 +132,7 @@ export const projectsData = [
 		tags: ["React", "Redux-Toolkit", "HTML", "Tailwind CSS", "Appwrite"],
 		githubUrl: "https://github.com/dipenkumarr/BlogSpot",
 		liveUrl: "https://blog-spot-drab.vercel.app/",
+		imageUrl: "/Blog.jpeg",
 	},
 	{
 		title: "ChatPDF",
@@ -135,6 +141,7 @@ export const projectsData = [
 		tags: ["Python", "LangChain", "Hugging Face API", "Streamlit"],
 		githubUrl: "https://github.com/dipenkumarr/ChatPDF",
 		liveUrl: "",
+		imageUrl: "/ChatPDF.jpeg",
 	},
 ] as const;
 
