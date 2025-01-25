@@ -18,42 +18,57 @@ export default function About() {
 		>
 			<SectionHeading>About Me</SectionHeading>
 			<p className="mb-5">
-				Hello! I&apos;m Dipen Kumar Maheshwari, a passionate and driven
-				Computer Science Honors student at the University of Alberta,
-				currently pursuing a Bachelor of Science degree. With a solid
-				academic foundation and hands-on experience, I specialize in
-				software development, particularly in full-stack web development
-				and systems programming.
+				Hello! I&apos;m{" "}
+				<span className="font-medium">Dipen Kumar Maheshwari</span>, a
+				Computer Science Honors student at the University of Alberta and
+				a{" "}
+				<span className="font-medium">
+					Machine Learning Developer Intern
+				</span>{" "}
+				at SAP. I specialize in building scalable, AI-driven solutions
+				and robust software systems, with hands-on experience in both
+				machine learning and full-stack development.
 			</p>
 			<p className="mb-5">
-				I&apos;ve had the privilege of interning as a Software/Research
-				Intern at the University of Alberta&apos;s ANCL Lab, where I
-				improved autonomous navigation algorithms and reduced
-				development setup time by 50% using Docker, ROS, Linux, and C++.
-				This experience taught me the importance of scalable, efficient
-				solutions, and I applied these lessons to my projects, including
-				full-stack applications like Bloom.ai and UniWays.
+				At SAP, I&apos;m part of the GenAI team, working on cutting-edge
+				projects like developing a{" "}
+				<span className="font-medium">
+					Generative AI-powered digital assistant
+				</span>{" "}
+				using Python, LangChain, and Azure Databricks. I also fine-tune
+				LLMs (like GPT-4 and Llama) and implement Retrieval-Augmented
+				Generation (RAG) workflows to enhance enterprise applications.
+				Previously, as a{" "}
+				<span className="font-medium">Software/Research Intern</span> at
+				the University of Alberta, I optimized autonomous navigation
+				algorithms and containerized systems using Docker, reducing
+				setup time by 50%.
 			</p>
 			<p className="mb-5">
-				My core technical stack includes React, Next.js, Node.js, and
-				MongoDB, with additional proficiency in TypeScript, Prisma, and
-				modern tools like TailwindCSS and Docker. I have a passion for
-				problem-solving and enjoy working on complex challenges that
-				require robust, scalable back-end systems paired with intuitive,
-				user-friendly front-ends. My work often involves integrating
-				real-time data and ensuring security and performance in
-				everything I build.
-			</p>
-
-			<p className="mb-5">
-				Currently,{" "}
-				<span className="underline underline-offset-4">
-					I&apos;m seeking Software Engineering Internships{" "}
+				My technical toolkit includes{" "}
+				<span className="font-medium">
+					Python, Java, C++, and JavaScript/TypeScript
 				</span>
-				where I can continue to develop my skills, contribute to
-				meaningful projects, and work in dynamic teams. I am always
-				eager to learn and grow, constantly exploring new technologies
-				to enhance my development toolkit.
+				, along with frameworks like{" "}
+				<span className="font-medium">PyTorch, React, and Next.js</span>
+				. I&apos;m proficient in building RESTful APIs, designing CI/CD
+				pipelines, and working with databases like{" "}
+				<span className="font-medium">PostgreSQL and MongoDB</span>.
+				I&apos;m particularly passionate about the intersection of AI
+				and software engineering, where I can leverage machine learning
+				to solve real-world problems.
+			</p>
+			<p className="mb-5">
+				I&apos;m currently open to internship opportunities in{" "}
+				<span className="font-medium">
+					Software Engineering (SWE), Machine Learning Engineering
+					(MLE), and Data Analytics (DA)
+				</span>
+				. I thrive in collaborative environments where I can apply my
+				technical skills to create impactful solutions while
+				continuously learning and growing. If you&apos;re looking for
+				someone who can bridge the gap between AI and software
+				development, let&apos;s connect!
 			</p>
 		</motion.section>
 	);

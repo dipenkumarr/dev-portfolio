@@ -21,7 +21,7 @@ export default function Project({
 
 	return (
 		<section className="bg-gray-100 flex flex-col max-w-[42rem] border border-black/5 overflow-hidden rounded-2xl mt-4 sm:mt-0 h-full hover:bg-gray-200 transition-all dark:bg-white/10 dark:hover:bg-white/15 dark:text-gray-50 dark:border-white/10">
-			<div
+			{/* <div
 				className="relative w-full h-[300px] overflow-hidden cursor-pointer group"
 				onClick={() => setIsModalOpen(true)}
 			>
@@ -39,7 +39,7 @@ export default function Project({
 						Click to view full image
 					</span>
 				</div>
-			</div>
+			</div> */}
 
 			<ImageModal
 				isOpen={isModalOpen}

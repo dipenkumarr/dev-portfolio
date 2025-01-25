@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGraduationCap, FaResearchgate } from "react-icons/fa";
+import { FaBriefcase, FaGraduationCap, FaResearchgate } from "react-icons/fa";
 
 export const links = [
 	{
@@ -30,28 +30,54 @@ export const links = [
 
 export const experiencesData = [
 	{
-		title: "Bachelor of Science Honors in Computer Science",
-		location: "University of Alberta, Edmonton, CA",
+		title: "Machine Learning Developer Intern",
+		location: "SAP, Vancouver, BC",
 		description:
-			"Pursuing a Bachelor of Science Honors in Computer Science with a GPA of 3.6. Relevant coursework includes Python and Systems Programming, Databases, Machine Learning, AI, Data Structures & Algorithms, and more.",
-		icon: React.createElement(FaGraduationCap),
-		date: "Sep 2022 - May 2026",
+			"Developing GenAI-powered digital assistant using Python, Azure Databricks, and LangChain. Implementing RAG workflows with GPT-4/LLaMA, building Flask APIs for enterprise integration, and optimizing CI/CD pipelines with Azure DevOps.",
+		icon: React.createElement(FaBriefcase),
+		date: "Jan 2025 - Present",
 	},
 	{
-		title: "Summer Software/Research Intern",
-		location: "University of Alberta - ANCL LAB, Edmonton, AB",
+		title: "Software/Research Intern",
+		location: "University of Alberta - ANCL Lab, Edmonton, AB",
 		description:
-			"Improved the structure and readability of code for autonomous navigation algorithms using ROS, Linux, and C++. Initiated the containerization of applications using Docker, reducing setup time by more than 50%. Utilized Git and GitHub for version control and collaboration.",
-		icon: React.createElement(FaResearchgate),
+			"Optimized ROS-based navigation algorithms (C++/Python), containerized systems with Docker (50% setup reduction), and implemented CI/CD workflows using GitHub Actions (25% fewer integration errors).",
+		icon: React.createElement(FaBriefcase),
 		date: "May 2024 - June 2024",
+	},
+	{
+		title: "BSc Honors in Computer Science",
+		location: "University of Alberta, Edmonton, AB",
+		description:
+			"Relevant Coursework: ML, AI, Software Engineering, Databases | Awards: Dean's Honor Roll, GHacks 1st Place",
+		icon: React.createElement(FaGraduationCap),
+		date: "Sep 2022 - Dec 2026",
 	},
 ] as const;
 
 export const projectsData = [
 	{
+		title: "SpotLotto - Event Lottery System",
+		description:
+			"Developed an Android-based event lottery application using Java and Firebase, implementing real-time data management and geolocation verification. Achieved 95% test coverage through JUnit and test-driven development. Led a 6-member Agile team, designing UML models and implementing CI/CD pipelines for streamlined deployment.",
+		tags: [
+			"Java",
+			"Android Studio",
+			"Firebase",
+			"JUnit",
+			"Agile",
+			"Git",
+			"GitHub",
+			"CI/CD",
+		],
+		githubUrl: "https://github.com/dipenkumarr/SpotLotto",
+		liveUrl: "",
+		imageUrl: "/SpotLotto.jpeg", // Add an image for SpotLotto in your public folder
+	},
+	{
 		title: "UniWays - Google Hacks Winner",
 		description:
-			" Led a team of three to develop a full-stack campus navigation app using Next.js, React, and TypeScript, significantly reducing students’ travel time by up to 20% with Google Maps API integration and pathway suggestions. Implemented secure user authentication via Clerk OAuth, enabling secure login and personalized schedules, stored in a Prisma-managed PostgrsSQL database. Designed a user-centric, responsive interface, using TailwindCSS, enhancing user experience with geocoding for precise location mapping.",
+			"Led a team of three to develop a full-stack campus navigation app using Next.js, React, and TypeScript, significantly reducing students’ travel time by up to 20% with Google Maps API integration and pathway suggestions. Implemented secure user authentication via Clerk OAuth, enabling secure login and personalized schedules, stored in a Prisma-managed PostgrsSQL database. Designed a user-centric, responsive interface, using TailwindCSS, enhancing user experience with geocoding for precise location mapping.",
 		tags: [
 			"Next.js",
 			"React",
@@ -146,27 +172,41 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+	// Programming Languages
 	"Python",
+	"Java",
 	"JavaScript",
 	"TypeScript",
-	"Java",
 	"C/C++",
-	"SQL (MySQL, SQLite)",
+	"SQL",
 	"HTML",
 	"CSS",
+
+	// Frameworks & Libraries
 	"React.js",
 	"Next.js",
 	"Node.js",
 	"Express.js",
-	"Tailwind CSS",
-	"Numpy",
+	"Flask",
 	"PyTorch",
+	"LangChain",
+	"Pandas",
+	"NumPy",
+	"Tailwind CSS",
+	"JUnit",
+
+	// Tools & Platforms
 	"Git",
 	"GitHub",
-	"VS Code",
-	"Redux-Toolkit",
-	"Postman",
-	"Linux/Unix",
 	"Docker",
+	"Azure Databricks",
+	"Azure DevOps",
+	"Firebase",
 	"MongoDB",
+	"PostgreSQL",
+	"MySQL",
+	"SQLite",
+	"VS Code",
+	"Android Studio",
+	"Linux/Unix",
 ] as const;

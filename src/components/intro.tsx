@@ -66,7 +66,11 @@ export default function Intro() {
 						Hello, I&apos;m Dipen Kumar.
 					</span>{" "}
 					I&apos;m a{" "}
-					<span className="font-bold">Computer Science Honors </span>
+					<span className="font-bold">
+						{" "}
+						Machine Learning Engineer at SAP and Computer Science
+						Honors{" "}
+					</span>
 					Student at the{" "}
 					<span className="font-bold">University of Alberta.</span> I
 					enjoy learning & building apps.
