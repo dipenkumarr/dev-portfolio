@@ -23,7 +23,7 @@ export default function About() {
 				Computer Science Honors student at the University of Alberta and
 				a{" "}
 				<span className="font-medium">
-					Machine Learning Developer Intern
+					Machine Learning Engineer Intern
 				</span>{" "}
 				at SAP. I specialize in building scalable, AI-driven solutions
 				and robust software systems, with hands-on experience in both

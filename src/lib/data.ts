@@ -30,10 +30,10 @@ export const links = [
 
 export const experiencesData = [
 	{
-		title: "Machine Learning Developer Intern",
+		title: "Machine Learning Engineer Intern",
 		location: "SAP, Vancouver, BC",
 		description:
-			"Developing GenAI-powered digital assistant using Python, Azure Databricks, and LangChain. Implementing RAG workflows with GPT-4/LLaMA, building Flask APIs for enterprise integration, and optimizing CI/CD pipelines with Azure DevOps.",
+			"Developing GenAI-powered digital assistant using Python, Azure Databricks, and LangChain. Implementing RAG workflows with LLMs, building Flask APIs for enterprise integration, and optimizing CI/CD pipelines with Azure DevOps.",
 		icon: React.createElement(FaBriefcase),
 		date: "Jan 2025 - Present",
 	},
@@ -49,7 +49,7 @@ export const experiencesData = [
 		title: "BSc Honors in Computer Science",
 		location: "University of Alberta, Edmonton, AB",
 		description:
-			"Relevant Coursework: ML, AI, Software Engineering, Databases | Awards: Dean's Honor Roll, GHacks 1st Place",
+			"Relevant Coursework: Software Engineering, Data Structures & Algorithms, OOP, Relational Database Management, Machine Learning, Artificial Intelligence, Systems Programming, Computer Organization and Architecture, Statistics, Reinforcement Learning, Image Processing",
 		icon: React.createElement(FaGraduationCap),
 		date: "Sep 2022 - Dec 2026",
 	},
@@ -59,18 +59,21 @@ export const projectsData = [
 	{
 		title: "SpotLotto - Event Lottery System",
 		description:
-			"Developed an Android-based event lottery application using Java and Firebase, implementing real-time data management and geolocation verification. Achieved 95% test coverage through JUnit and test-driven development. Led a 6-member Agile team, designing UML models and implementing CI/CD pipelines for streamlined deployment.",
+			"Developed an Android-based event lottery application using Java and Firebase, designed to streamline event registration through a fair, automated lottery system. Implemented Firebase Firestore for real-time data management, Firebase Authentication for secure user access, and Firebase Cloud Messaging (FCM) for instant push notifications. Key features include a multi-role user system (entrants, organizers, admins), QR code integration for event access, and geolocation-based event registration. Achieved 95% test coverage through JUnit and test-driven development, ensuring robust functionality and reliability.",
 		tags: [
 			"Java",
 			"Android Studio",
 			"Firebase",
+			"Firestore",
+			"Firebase Authentication",
+			"Firebase Cloud Messaging",
 			"JUnit",
 			"Agile",
 			"Git",
 			"GitHub",
 			"CI/CD",
 		],
-		githubUrl: "https://github.com/dipenkumarr/SpotLotto",
+		githubUrl: "https://github.com/CMPUT301F24ocelot/ocelot-novels",
 		liveUrl: "",
 		imageUrl: "/SpotLotto.jpeg", // Add an image for SpotLotto in your public folder
 	},
