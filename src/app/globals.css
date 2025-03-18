@@ -5,3 +5,10 @@
 html {
 	--line-color: #e5e7eb;
 }
+
+html,
+body {
+	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+}
