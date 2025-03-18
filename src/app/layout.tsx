@@ -11,8 +11,42 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-	title: "Dipen Personal Portfolio",
-	description: "Dipen is CS Student and Full Stack Developer",
+	title: "Dipen | Software Developer & CS Student",
+	description:
+		"Dipen is a Computer Science student and Software Developer specializing in building modern web applications with React, Next.js, and Node.js.",
+	keywords: [
+		"Dipen",
+		"Full Stack Developer",
+		"Web Developer",
+		"Computer Science",
+		"React",
+		"Next.js",
+		"Portfolio",
+		"Software Developer",
+		"Machine Learning",
+	],
+	authors: [{ name: "Dipen" }],
+	metadataBase: new URL("https://dipen-kumar-portfolio.vercel.app/"),
+	alternates: {
+		canonical: "/",
+	},
+	openGraph: {
+		title: "Dipen | Software Developer & CS Student",
+		description:
+			"Dipen is a Computer Science student and Full Stack Developer specializing in building modern web applications with React, Next.js, and Node.js.",
+		url: "https://dipen-kumar-portfolio.vercel.app/",
+		siteName: "Dipen&apos;s Portfolio",
+		locale: "en_US",
+		type: "website",
+		images: [
+			{
+				url: "/public/intro-image.png",
+				width: 1200,
+				height: 630,
+				alt: "Dipen's Portfolio",
+			},
+		],
+	},
 };
 
 export default function RootLayout({
