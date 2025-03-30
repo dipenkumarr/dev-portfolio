@@ -21,54 +21,53 @@ export default function About() {
 				Hello! I&apos;m{" "}
 				<span className="font-medium">Dipen Kumar Maheshwari</span>, a
 				Computer Science Honors student at the University of Alberta and
-				a{" "}
+				currently a{" "}
 				<span className="font-medium">
 					Machine Learning Engineer Intern
 				</span>{" "}
-				at SAP. I specialize in building scalable, AI-driven solutions
-				and robust software systems, with hands-on experience in both
-				machine learning and full-stack development.
+				at SAP.
 			</p>
 			<p className="mb-5">
-				At SAP, I&apos;m part of the GenAI team, working on cutting-edge
-				projects like developing a{" "}
+				At SAP, I&apos;m developing an{" "}
 				<span className="font-medium">
-					Generative AI-powered digital assistant
+					unsupervised NLP model using transformers like SBERT
 				</span>{" "}
-				using Python, LangChain, and Azure Databricks. I also fine-tune
-				LLMs (like GPT-4 and Llama) and implement Retrieval-Augmented
-				Generation (RAG) workflows to enhance enterprise applications.
-				Previously, as a{" "}
+				to automate ticket categorization, aiming to significantly
+				reduce approval times. My previous experience as a{" "}
 				<span className="font-medium">Software/Research Intern</span> at
-				the University of Alberta, I optimized autonomous navigation
-				algorithms and containerized systems using Docker, reducing
-				setup time by 50%.
+				the University of Alberta involved containerizing autonomous
+				navigation systems with{" "}
+				<span className="font-medium">Docker</span>, which cut setup
+				time by 50%, and refactoring C++/Python code in{" "}
+				<span className="font-medium">ROS</span>.
 			</p>
 			<p className="mb-5">
-				My technical toolkit includes{" "}
+				My technical skills include{" "}
 				<span className="font-medium">
-					Python, Java, C++, and JavaScript/TypeScript
+					Python, Java, JavaScript/TypeScript, C++, and Go
 				</span>
 				, along with frameworks like{" "}
 				<span className="font-medium">PyTorch, React, and Next.js</span>
-				. I&apos;m proficient in building RESTful APIs, designing CI/CD
-				pipelines, and working with databases like{" "}
-				<span className="font-medium">PostgreSQL and MongoDB</span>.
-				I&apos;m particularly passionate about the intersection of AI
-				and software engineering, where I can leverage machine learning
-				to solve real-world problems.
+				. I have hands-on experience building full-stack applications
+				(like <span className="font-medium">UniWays</span> and{" "}
+				<span className="font-medium">Bloom.ai</span>), implementing ML
+				models, working with databases (SQL/NoSQL), and utilizing tools
+				like <span className="font-medium">Docker</span> and{" "}
+				<span className="font-medium">Azure Databricks</span>.
 			</p>
 			<p className="mb-5">
-				I&apos;m currently open to internship opportunities in{" "}
+				I am actively seeking internship opportunities for{" "}
+				{/* You can adjust the timeframe as needed */}
 				<span className="font-medium">
-					Software Engineering (SWE), Machine Learning Engineering
-					(MLE), and Data Analytics (DA)
-				</span>
-				. I thrive in collaborative environments where I can apply my
-				technical skills to create impactful solutions while
-				continuously learning and growing. If you&apos;re looking for
-				someone who can bridge the gap between AI and software
-				development, let&apos;s connect!
+					Fall 2025 or Winter/Summer 2026
+				</span>{" "}
+				in{" "}
+				<span className="font-medium">
+					Software Engineering, Machine Learning Engineering, or Data
+					Science
+				</span>{" "}
+				where I can apply my skills in AI and software development to
+				contribute to meaningful projects.
 			</p>
 		</motion.section>
 	);

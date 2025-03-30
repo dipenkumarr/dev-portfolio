@@ -33,24 +33,27 @@ export const experiencesData = [
 		title: "Machine Learning Engineer Intern",
 		location: "SAP, Vancouver, BC",
 		description:
-			"Developing GenAI-powered digital assistant using Python, Azure Databricks, and LangChain. Implementing RAG workflows with LLMs, building Flask APIs for enterprise integration, and optimizing CI/CD pipelines with Azure DevOps.",
-		icon: React.createElement(FaBriefcase),
+			"Developing an unsupervised NLP model using SBERT transformers to automate ticket categorization, targeting a 60% reduction in approval time. Performing extensive EDA on Azure Databricks and integrating models into scalable API endpoints.",
+		icon: "/sap-logo.jpg",
+		// icon: React.createElement(FaBriefcase),
 		date: "Jan 2025 - Present",
 	},
 	{
 		title: "Software/Research Intern",
 		location: "University of Alberta - ANCL Lab, Edmonton, AB",
 		description:
-			"Optimized ROS-based navigation algorithms (C++/Python), containerized systems with Docker (50% setup reduction), and implemented CI/CD workflows using GitHub Actions (25% fewer integration errors).",
-		icon: React.createElement(FaBriefcase),
+			"Led Docker containerization of autonomous navigation systems, reducing environment setup time by 50%. Refactored ROS navigation algorithms (C++/Python) and enhanced version control with Git/GitHub, decreasing merge conflicts by 40%.",
+		// icon: React.createElement(FaBriefcase),
+		icon: "/ua-logo.png",
 		date: "May 2024 - June 2024",
 	},
 	{
 		title: "BSc Honors in Computer Science",
 		location: "University of Alberta, Edmonton, AB",
 		description:
-			"Relevant Coursework: Software Engineering, Data Structures & Algorithms, OOP, Relational Database Management, Machine Learning, Artificial Intelligence, Systems Programming, Computer Organization and Architecture, Statistics, Reinforcement Learning, Image Processing",
-		icon: React.createElement(FaGraduationCap),
+			"Relevant Coursework: Software Engineering, Data Structures & Algorithms, Relational Database Management, Machine Learning, Artificial Intelligence.",
+		// icon: React.createElement(FaGraduationCap),
+		icon: "/ua-logo.png",
 		date: "Sep 2022 - Dec 2026",
 	},
 ] as const;
