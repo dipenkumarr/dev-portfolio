@@ -7,6 +7,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 // Removed FaBriefcase, FaGraduationCap imports as they seem replaced by Image
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Experience() {
 	const { ref } = useSectionInView("Experience");
@@ -19,11 +20,15 @@ export default function Experience() {
 	// }
 
 	return (
-		<section
+		<motion.section
 			id="experience"
 			ref={ref}
 			// Reduced horizontal margin for smaller screens, keeps mx-16 for larger screens
 			className="scroll-mt-28 mb-28 sm:mb-40 mx-4 sm:mx-16"
+			initial={{ opacity: 0, y: 70 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.5 }}
+			viewport={{ once: true }}
 		>
 			<SectionHeading>Experience</SectionHeading>
 
@@ -31,7 +36,6 @@ export default function Experience() {
 				{experiencesData.map((item, index) => (
 					<div
 						key={index}
-						// Adjusted padding for potentially smaller screens if needed, kept pl-8
 						className="group relative pl-8 border-l-2 border-gray-200 dark:border-gray-700"
 					>
 						{/* Timeline dot */}
@@ -77,6 +81,6 @@ export default function Experience() {
 					</div>
 				))}
 			</div>
-		</section>
+		</motion.section>
 	);
 }

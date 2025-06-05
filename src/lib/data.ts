@@ -157,24 +157,24 @@ export const projectsData = [
 		liveUrl: "https://audio-scribe.vercel.app/",
 		imageUrl: "/AudioScribe.jpeg",
 	},
-	{
-		title: "BlogSpot",
-		description:
-			"Developed a full-stack blogging platform using React for the frontend, integrated with Appwrite for user authentication and data storage. Implemented real-time user authentication flow using Appwrite’s auth service, allowing for secure login, logout, and user data retrieval.",
-		tags: ["React", "Redux-Toolkit", "HTML", "Tailwind CSS", "Appwrite"],
-		githubUrl: "https://github.com/dipenkumarr/BlogSpot",
-		liveUrl: "https://blog-spot-drab.vercel.app/",
-		imageUrl: "/Blog.jpeg",
-	},
-	{
-		title: "ChatPDF",
-		description:
-			"Developed ChatPDF, a Streamlit web app powered by LangChain and Hugging Face models. Enabled users to upload PDFs, ask context-aware questions, and receive informative answers. Utilized NLP techniques for efficient information retrieval, enhancing user interaction with PDF documents",
-		tags: ["Python", "LangChain", "Hugging Face API", "Streamlit"],
-		githubUrl: "https://github.com/dipenkumarr/ChatPDF",
-		liveUrl: "",
-		imageUrl: "/ChatPDF.jpeg",
-	},
+	// {
+	// 	title: "BlogSpot",
+	// 	description:
+	// 		"Developed a full-stack blogging platform using React for the frontend, integrated with Appwrite for user authentication and data storage. Implemented real-time user authentication flow using Appwrite’s auth service, allowing for secure login, logout, and user data retrieval.",
+	// 	tags: ["React", "Redux-Toolkit", "HTML", "Tailwind CSS", "Appwrite"],
+	// 	githubUrl: "https://github.com/dipenkumarr/BlogSpot",
+	// 	liveUrl: "https://blog-spot-drab.vercel.app/",
+	// 	imageUrl: "/Blog.jpeg",
+	// },
+	// {
+	// 	title: "ChatPDF",
+	// 	description:
+	// 		"Developed ChatPDF, a Streamlit web app powered by LangChain and Hugging Face models. Enabled users to upload PDFs, ask context-aware questions, and receive informative answers. Utilized NLP techniques for efficient information retrieval, enhancing user interaction with PDF documents",
+	// 	tags: ["Python", "LangChain", "Hugging Face API", "Streamlit"],
+	// 	githubUrl: "https://github.com/dipenkumarr/ChatPDF",
+	// 	liveUrl: "",
+	// 	imageUrl: "/ChatPDF.jpeg",
+	// },
 ] as const;
 
 export const skillsData = [

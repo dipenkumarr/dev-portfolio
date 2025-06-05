@@ -11,13 +11,20 @@ export default function Projects() {
 
 	return (
 		<motion.section
-			initial={{ opacity: 0, y: 100 }}
-			animate={{ opacity: 1, y: 0 }}
-			className="scroll-mt-32 mb-28"
 			id="projects"
+			className="scroll-mt-32 mb-28"
+			initial={{ opacity: 0, y: 70 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.5 }}
+			viewport={{ once: true }}
 			ref={ref}
 		>
-			<SectionHeading>My Projects</SectionHeading>
+			<SectionHeading>
+				My Projects
+				<p className="flex justify-center items-center m-2 text-sm text-gray-700">
+					Click to learn more
+				</p>
+			</SectionHeading>
 			<div className="sm:grid sm:grid-cols-2 sm:gap-6">
 				{projectsData.map((project, index) => (
 					<React.Fragment key={index}>

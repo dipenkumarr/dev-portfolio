@@ -12,7 +12,7 @@ export default function About() {
 			className="mb-28 max-w-5xl text-center leading-8 sm:mb-40 text-base md:text-xl scroll-mt-28 sm:scroll-mt-72"
 			initial={{ opacity: 0, y: 100 }}
 			animate={{ opacity: 1, y: 0 }}
-			transition={{ delay: 0.175 }}
+			transition={{ delay: 0.5 }}
 			id="about"
 			ref={ref}
 		>
