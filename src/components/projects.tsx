@@ -21,7 +21,7 @@ export default function Projects() {
 		>
 			<SectionHeading>
 				My Projects
-				<p className="flex justify-center items-center m-2 text-sm text-gray-700">
+				<p className="flex justify-center items-center m-2 text-sm dark:text-gray-700 text-gray-400">
 					Click to learn more
 				</p>
 			</SectionHeading>

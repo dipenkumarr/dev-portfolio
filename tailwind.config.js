@@ -7,6 +7,12 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				"sf-pro": ["var(--font-sf-pro)", "system-ui", "sans-serif"],
+			},
+			fontStretch: {
+				expanded: "expanded",
+			},
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 				"gradient-conic":

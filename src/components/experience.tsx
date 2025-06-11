@@ -10,7 +10,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Experience() {
-	const { ref } = useSectionInView("Experience");
+	const { ref } = useSectionInView("Experience", 0.5);
 	const { theme } = useTheme(); // theme variable is declared but not used in the provided snippet for styling text colors conditionally below, consider using it if needed.
 
 	// Validate experiencesData structure (ensure item.icon has the image path)
@@ -22,13 +22,13 @@ export default function Experience() {
 	return (
 		<motion.section
 			id="experience"
-			ref={ref}
 			// Reduced horizontal margin for smaller screens, keeps mx-16 for larger screens
 			className="scroll-mt-28 mb-28 sm:mb-40 mx-4 sm:mx-16"
 			initial={{ opacity: 0, y: 70 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.5 }}
 			viewport={{ once: true }}
+			ref={ref}
 		>
 			<SectionHeading>Experience</SectionHeading>
 

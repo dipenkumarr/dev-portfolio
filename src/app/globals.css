@@ -12,3 +12,23 @@ body {
 	position: relative;
 	width: 100%;
 }
+
+.font-sf-pro-expanded-regular {
+	font-family: var(--font-sf-pro), system-ui, sans-serif;
+	font-weight: 400;
+	font-stretch: expanded;
+}
+
+/* SF Pro Expanded Medium utility */
+.font-sf-pro-expanded-medium {
+	font-family: var(--font-sf-pro), system-ui, sans-serif;
+	font-weight: 500;
+	font-stretch: expanded;
+}
+
+/* You can also add other SF Pro variants */
+.font-sf-pro-expanded-bold {
+	font-family: var(--font-sf-pro), system-ui, sans-serif;
+	font-weight: 700;
+	font-stretch: expanded;
+}
