@@ -16,10 +16,10 @@ export default function SubmitBtn() {
 					<LuLoader2 />
 				</div>
 			) : (
-				<>
+				<div className="flex flex-row items-center justify-center gap-x-2 font-sf-pro-expanded-regular">
 					Submit{" "}
 					<FaPaperPlane className="text-sm opacity-80 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-				</>
+				</div>
 			)}
 		</button>
 	);
