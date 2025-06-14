@@ -22,7 +22,7 @@ export default function Project({
 
 	return (
 		<section
-			className="bg-gray-100 flex flex-col max-w-[42rem] border border-black/5 overflow-hidden rounded-2xl mt-4 sm:mt-0 h-full hover:bg-gray-200 transition-all dark:bg-white/10 dark:hover:bg-white/15 dark:text-gray-50 dark:border-white/10 cursor-pointer"
+			className="bg-gray-100/40 flex flex-col max-w-[42rem] border border-black/15 overflow-hidden rounded-2xl mt-4 sm:mt-0 h-full hover:bg-gray-200 transition-all dark:bg-white/10 dark:hover:bg-white/15 dark:text-gray-50 dark:border-white/10 cursor-pointer"
 			onClick={() => setIsModalOpen(true)}
 		>
 			<div className="p-6 sm:p-8 flex flex-col flex-grow">

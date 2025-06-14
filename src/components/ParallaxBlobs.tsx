@@ -5,20 +5,34 @@ import BgBlob from "@/components/BgBlob";
 
 const ParallaxBlobs = () => {
 	const [scrollY, setScrollY] = useState(0);
+	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
-		const handleScroll = () => {
-			setScrollY(window.scrollY);
+		const handleResize = () => {
+			setIsMobile(window.innerWidth < 768); // 768px is typical tablet breakpoint
 		};
+
+		const handleScroll = () => {
+			if (!isMobile) {
+				setScrollY(window.scrollY);
+			}
+		};
+
+		handleResize(); // Initial check
+		window.addEventListener("resize", handleResize);
 		window.addEventListener("scroll", handleScroll);
-		return () => window.removeEventListener("scroll", handleScroll);
-	}, []);
 
-	// Parallax speeds
-	const blob1Top = -106 + scrollY * 1.08; // original: -6rem = -96px
-	const blob2Top = -16 + scrollY * 0.98; // original: -1rem = -16px
+		return () => {
+			window.removeEventListener("resize", handleResize);
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, [isMobile]);
 
-	// console.log("scrollY:", scrollY);
+	// Parallax speeds - only apply if not mobile
+	const blob1Top = isMobile ? -106 : -106 + scrollY * 1.08;
+	const blob2Top = isMobile ? -16 : -16 + scrollY * 0.98;
+
+	console.log("scrollY:", scrollY);
 
 	return (
 		<>
