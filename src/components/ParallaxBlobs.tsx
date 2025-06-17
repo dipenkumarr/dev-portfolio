@@ -32,7 +32,7 @@ const ParallaxBlobs = () => {
 	const blob1Top = isMobile ? -106 : -106 + scrollY * 1.08;
 	const blob2Top = isMobile ? -16 : -16 + scrollY * 0.98;
 
-	console.log("scrollY:", scrollY);
+	// console.log("scrollY:", scrollY);
 
 	return (
 		<>

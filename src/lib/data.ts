@@ -180,33 +180,32 @@ export const projectsData = [
 export const skillsData = [
 	// Programming Languages
 	"Python",
-	"Java",
-	"JavaScript",
 	"TypeScript",
+	"JavaScript",
+	"Go",
+	"Java",
 	"C/C++",
 	"SQL",
 	"HTML",
 	"CSS",
 
 	// Frameworks & Libraries
-	"React.js",
 	"Next.js",
+	"React.js",
 	"Node.js",
 	"Express.js",
-	"Flask",
+	"FastAPI",
 	"PyTorch",
 	"LangChain",
 	"Pandas",
 	"NumPy",
 	"Tailwind CSS",
-	"JUnit",
 
 	// Tools & Platforms
 	"Git",
 	"GitHub",
 	"Docker",
 	"Azure Databricks",
-	"Azure DevOps",
 	"Firebase",
 	"MongoDB",
 	"PostgreSQL",
