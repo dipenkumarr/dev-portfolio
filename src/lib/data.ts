@@ -32,28 +32,27 @@ export const experiencesData = [
 	{
 		title: "Machine Learning Engineer Intern",
 		location: "SAP, Vancouver, BC",
-		description:
-			"Developing an unsupervised NLP model using SBERT transformers to automate ticket categorization, targeting a 60% reduction in approval time. Performing extensive EDA on Azure Databricks and integrating models into scalable API endpoints.",
-		icon: "/sap-logo.jpg",
-		// icon: React.createElement(FaBriefcase),
+		description: `Engineered an end-to-end data processing and unsupervised NLP pipeline on Azure Databricks (PySpark) to process ~38k raw tickets, reducing message volume by ~85% via FAISS-optimized semantic de-duplication.
+      Implemented comprehensive data quality workflows using NLTK/Spacy, reducing noisy data by 15% and significantly improving data consistency for model training.
+      Leveraged LLMs (GPT-4o/Gemini) with structured Pydantic outputs to evaluate and categorize tickets, projecting a nearly 60% reduction in manual triage time.
+      Prototyped an advanced RAG pipeline using DSPy and ColBERT to enhance an enterprise system, exploring late-interaction retrieval to generate highly accurate summaries from large-scale partner documentation.`,
+		icon: "/sap-logo.jpg", // Ensure this image path is correct in your public folder
 		date: "Jan 2025 - Present",
 	},
 	{
 		title: "Software/Research Intern",
 		location: "University of Alberta - ANCL Lab, Edmonton, AB",
-		description:
-			"Led Docker containerization of autonomous navigation systems, reducing environment setup time by 50%. Refactored ROS navigation algorithms (C++/Python) and enhanced version control with Git/GitHub, decreasing merge conflicts by 40%.",
-		// icon: React.createElement(FaBriefcase),
-		icon: "/ua-logo.png",
+		description: `Led the containerization of autonomous navigation systems using Docker, reducing development environment setup time by 50% and enhancing system reliability.
+      Refactored autonomous navigation algorithms in ROS, Linux, C++, and Python, boosting readability and reducing runtime errors.
+      Implemented robust Git and GitHub version control practices, including branch protection and pull request reviews, decreasing merge conflicts by 40%.`,
+		icon: "/ua-logo.png", // Ensure this image path is correct in your public folder
 		date: "May 2024 - June 2024",
 	},
 	{
 		title: "BSc Honors in Computer Science",
 		location: "University of Alberta, Edmonton, AB",
-		description:
-			"Relevant Coursework: Software Engineering, Data Structures & Algorithms, Relational Database Management, Machine Learning, Artificial Intelligence.",
-		// icon: React.createElement(FaGraduationCap),
-		icon: "/ua-logo.png",
+		description: `Relevant Coursework: Software Engineering, Data Structures & Algorithms, Relational Database Management, Machine Learning, Artificial Intelligence.`,
+		icon: "/ua-logo.png", // Ensure this image path is correct in your public folder
 		date: "Sep 2022 - Dec 2026",
 	},
 ] as const;
@@ -61,8 +60,8 @@ export const experiencesData = [
 export const projectsData = [
 	{
 		title: "SpotLotto - Event Lottery System",
-		description:
-			"Developed an Android-based event lottery application using Java and Firebase, designed to streamline event registration through a fair, automated lottery system. Implemented Firebase Firestore for real-time data management, Firebase Authentication for secure user access, and Firebase Cloud Messaging (FCM) for instant push notifications. Key features include a multi-role user system (entrants, organizers, admins), QR code integration for event access, and geolocation-based event registration. Achieved 95% test coverage through JUnit and test-driven development, ensuring robust functionality and reliability.",
+		description: `Built an Android application using Java and Firebase to automate event registrations via a fair lottery system, integrating Google ML Kit for QR code scanning and geolocation features.
+      Led a 6-member Agile team to design a multi-role user system and implement Firebase Cloud Messaging (FCM) for real-time push notifications, achieving 80% test coverage with JUnit through test-driven development, ensuring robust functionality and reliability.`,
 		tags: [
 			"Java",
 			"Android Studio",
@@ -70,20 +69,20 @@ export const projectsData = [
 			"Firestore",
 			"Firebase Authentication",
 			"Firebase Cloud Messaging",
+			"Google ML Kit",
 			"JUnit",
 			"Agile",
 			"Git",
 			"GitHub",
-			"CI/CD",
 		],
 		githubUrl: "https://github.com/CMPUT301F24ocelot/ocelot-novels",
 		liveUrl: "",
-		imageUrl: "/SpotLotto.jpeg", // Add an image for SpotLotto in your public folder
+		imageUrl: "/SpotLotto.jpeg", // Ensure this image exists in your public folder
 	},
 	{
 		title: "UniWays - Google Hacks Winner",
-		description:
-			"Led a team of three to develop a full-stack campus navigation app using Next.js, React, and TypeScript, significantly reducing students’ travel time by up to 20% with Google Maps API integration and pathway suggestions. Implemented secure user authentication via Clerk OAuth, enabling secure login and personalized schedules, stored in a Prisma-managed PostgrsSQL database. Designed a user-centric, responsive interface, using TailwindCSS, enhancing user experience with geocoding for precise location mapping.",
+		description: `Led a team of three to develop a full-stack campus navigation web application using Next.js, React, and TypeScript, achieving a 20% reduction in estimated student travel time through Google Maps API integration and real-time route optimization.
+      Designed robust REST APIs with Prisma and PostgreSQL, incorporating secure OAuth via Clerk for enhanced user authentication and data protection. Crafted a user-centric, responsive interface with TailwindCSS, utilizing geocoding for precise location mapping.`,
 		tags: [
 			"Next.js",
 			"React",
@@ -97,12 +96,12 @@ export const projectsData = [
 		],
 		githubUrl: "https://github.com/dipenkumarr/UniWays-GHacks",
 		liveUrl: "",
-		imageUrl: "/UniWays.jpeg",
+		imageUrl: "/UniWays.jpeg", // Ensure this image exists in your public folder
 	},
 	{
 		title: "Bloom.ai",
-		description:
-			"Built Bloom.ai, a full-stack web application leveraging Next.js, React, and TypeScript, that facilitates anonymous feedback and incorporates AI-powered message suggestions using Google’s Gemini AI through Vercel AI SDK. Implemented robust backend with MongoDB for data persistence, custom server middleware for enhanced security, and Zod for type validation, while crafting a responsive UI using Tailwind CSS and shadcn/ui.",
+		description: `Built Bloom.ai, a full-stack web application leveraging Next.js, React, and TypeScript, that facilitates anonymous feedback and incorporates AI-powered message suggestions, reducing message composition time by 40% through Google’s Gemini-AI LLM integration via Vercel AI SDK.
+      Implemented a secure backend and authentication system using MongoDB and NextAuth, with Zod schema validation for enhanced data integrity and security, while crafting a responsive UI using Tailwind CSS and shadcn/ui.`,
 		tags: [
 			"Next.js",
 			"React",
@@ -110,16 +109,18 @@ export const projectsData = [
 			"TailwindCSS",
 			"MongoDB",
 			"Zod",
-			"GeminiAI",
+			"Gemini-AI",
+			"Vercel AI SDK",
+			"NextAuth",
 		],
 		githubUrl: "https://github.com/dipenkumarr/bloom.ai",
 		liveUrl: "https://bloom-ai-three.vercel.app/",
-		imageUrl: "/bloom_ai.jpeg",
+		imageUrl: "/bloom_ai.jpeg", // Ensure this image exists in your public folder
 	},
 	{
 		title: "SurfWeb RAG-Based Web Interaction Tool",
-		description:
-			"Developed a web application that allows users to interact with any website by entering its URL, creating searchable indexes, and enabling chat-based queries using a custom vector and redis database with Upstash. Leveraged Tailwind CSS for UI design and Vercel AI SDK to enhance the user experience, facilitating efficient content retrieval and interaction across diverse websites.",
+		description: `Developed a web application that allows users to interact with any website by entering its URL, creating searchable indexes, and enabling chat-based queries using a custom vector database and Redis with Upstash.
+      Leveraged Tailwind CSS for UI design and Vercel AI SDK to enhance the user experience, facilitating efficient content retrieval and interaction across diverse websites.`,
 		tags: [
 			"Next.js",
 			"React",
@@ -131,31 +132,33 @@ export const projectsData = [
 		],
 		githubUrl: "https://github.com/dipenkumarr/SurfWeb-RAG-LLama",
 		liveUrl: "https://surf-web.vercel.app/",
-		imageUrl: "/SurfWeb.jpeg",
+		imageUrl: "/SurfWeb.jpeg", // Ensure this image exists in your public folder
 	},
 	{
 		title: "Classification on NotMNIST-RGB and NotMNIST DL using CNN",
-		description:
-			"Developed and implemented a modified LeNet CNN for classification on the RGB NotMNIST dataset, optimizing architecture and weight initialization. Optimized object detection using sliding window detection on the NotMNIST-DL dataset, achieving a detection accuracy of 82.8% and classification accuracy of 97.53%.",
-		tags: ["Python", "PyTorch"],
+		description: `Engineered a convolutional neural network (CNN) deep learning model with a modified LeNet architecture for classification on the RGB NotMNIST dataset, achieving 97.5% accuracy in image classification.
+      Optimized object detection using sliding window detection on the NotMNIST-DL dataset, reaching a detection accuracy of 82.8%.`,
+		tags: ["Python", "PyTorch", "CNN", "Deep Learning"],
 		githubUrl: "https://github.com/dipenkumarr/CNN-Classification",
 		liveUrl: "",
-		imageUrl: "/CNN.jpeg",
+		imageUrl: "/CNN.jpeg", // Ensure this image exists in your public folder
 	},
 	{
 		title: "AudioScribe",
-		description:
-			"Developed a dynamic web application leveraging React and Web Workers for real-time audio transcription and translation, utilizing advanced NLP models from Hugging Face for accurate and efficient language processing. Designed a user-friendly interface with responsive design, allowing users to easily transcribe and translate audio content with minimal delay and maximum accuracy.",
+		description: `Developed a dynamic web application leveraging React and Web Workers for real-time audio transcription and translation, utilizing advanced NLP models from Hugging Face for accurate and efficient language processing.
+      Designed a user-friendly interface with responsive design, allowing users to easily transcribe and translate audio content with minimal delay and maximum accuracy.`,
 		tags: [
 			"React",
 			"HTML",
+			"CSS",
 			"Tailwind CSS",
 			"Hugging Face Models",
 			"Transformers",
+			"NLP",
 		],
 		githubUrl: "https://github.com/dipenkumarr/AudioScribe",
 		liveUrl: "https://audio-scribe.vercel.app/",
-		imageUrl: "/AudioScribe.jpeg",
+		imageUrl: "/AudioScribe.jpeg", // Ensure this image exists in your public folder
 	},
 	// {
 	// 	title: "BlogSpot",

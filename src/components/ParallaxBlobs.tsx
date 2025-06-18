@@ -37,7 +37,7 @@ const ParallaxBlobs = () => {
 	return (
 		<>
 			<BgBlob
-				className="bg-[#fbe2e3] absolute -z-10 right-[-10rem] h-[38.25rem] w-[31.25rem] rounded-full blur-[20rem] sm:w-[68.75rem] dark:bg-[#946263] dark:bg-opacity-40 overscroll-none overflow-hidden bg-opacity-40"
+				className="bg-[#f4d3d4] absolute -z-10 right-[-10rem] h-[38.25rem] w-[31.25rem] rounded-full blur-[20rem] sm:w-[68.75rem] dark:bg-[#946263] dark:bg-opacity-40 overscroll-none overflow-hidden bg-opacity-40"
 				style={{ top: `${blob1Top}px` }}
 			/>
 			<BgBlob

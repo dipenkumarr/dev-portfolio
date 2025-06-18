@@ -2,20 +2,69 @@
 
 import { useActiveSection } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import SectionDivider from "./section-divider";
+import { useState } from "react";
 
 export default function Intro() {
 	const { ref } = useSectionInView("Home", 0.9, true);
 	const { setActiveSection, setTimeOfLastClick } = useActiveSection();
+	const [showWaveEffect, setShowWaveEffect] = useState(false);
+
+	const handleWaveClick = () => {
+		setShowWaveEffect(true);
+		setTimeout(() => setShowWaveEffect(false), 3000);
+	};
 
 	return (
-		<div className="h-screen flex items-center justify-center text-center -mt-28 sm:-mt-52 mb-20 sm:mb-32">
+		<div className="h-screen flex items-center justify-center text-center -mt-28 sm:-mt-52 mb-20 sm:mb-32 relative overflow-hidden">
+			<AnimatePresence>
+				{showWaveEffect && (
+					<motion.div
+						className="fixed inset-0 z-50 flex items-center justify-center pointer-events-none"
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						exit={{ opacity: 0 }}
+						transition={{ duration: 0.5 }}
+					>
+						{Array.from({ length: 50 }).map((_, index) => (
+							<motion.div
+								key={index}
+								className="absolute text-4xl"
+								initial={{
+									opacity: 0,
+									scale: 0,
+									x: 0,
+									y: 0,
+								}}
+								animate={{
+									opacity: [0, 1, 0],
+									scale: [0, 1.5, 0],
+									x:
+										(Math.random() - 0.5) *
+										window.innerWidth,
+									y:
+										(Math.random() - 0.5) *
+										window.innerHeight,
+								}}
+								transition={{
+									duration: 2,
+									delay: Math.random() * 0.5,
+									ease: "easeOut",
+								}}
+							>
+								👋
+							</motion.div>
+						))}
+					</motion.div>
+				)}
+			</AnimatePresence>
+
 			<section id="home" ref={ref}>
 				<div className="flex items-center justify-center">
 					<div className="relative">
@@ -34,7 +83,7 @@ export default function Intro() {
 							/>
 						</motion.div>
 						<motion.span
-							className="absolute bottom-0 right-0 text-4xl"
+							className="absolute bottom-0 right-0 text-4xl cursor-pointer select-none"
 							initial={{ scale: 0, opacity: 0 }}
 							animate={{ scale: 1, opacity: 1 }}
 							whileHover={{
@@ -51,6 +100,8 @@ export default function Intro() {
 								stiffness: 125,
 								delay: 0.1,
 							}}
+							onClick={handleWaveClick}
+							style={{ zIndex: 60 }}
 						>
 							👋
 						</motion.span>
