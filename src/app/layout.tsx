@@ -11,6 +11,7 @@ import localFont from "next/font/local";
 import React, { useEffect, useState } from "react";
 import BgBlob from "@/components/BgBlob";
 import ParallaxBlobs from "@/components/ParallaxBlobs";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -72,6 +73,15 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className={`scroll-smooth ${sfPro.variable}`}>
+			<Head>
+				<link
+					rel="preload"
+					href="/fonts/SF-Pro.ttf"
+					as="font"
+					type="font/ttf"
+					crossOrigin="anonymous"
+				/>
+			</Head>
 			<body
 				className={`font-sf-pro-expanded-regular bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 overscroll-none dark:bg-gray-950 dark:text-gray-50 dark:text-opacity-90`}
 			>
