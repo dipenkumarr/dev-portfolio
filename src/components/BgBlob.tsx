@@ -16,4 +16,6 @@ const BgBlob = forwardRef<
 	);
 });
 
+BgBlob.displayName = "BgBlob";
+
 export default BgBlob;
