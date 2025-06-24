@@ -59,6 +59,28 @@ export const experiencesData = [
 
 export const projectsData = [
 	{
+		title: "Hooked/ai",
+		description: `Built a production-ready, full-stack platform that transforms long-form podcasts into viral short-form videos using a modular AI pipeline.
+        Integrated WhisperX for speech-to-text transcription, Gemini for semantic analysis and viral moment detection, and Active Speaker Detection for auto-cropping around the speaker's face.
+        Architected GPU-accelerated processing with FastAPI and Modal, coordinated via Inngest queues to handle asynchronous workloads reliably.
+        Managed video storage, uploads, and retrieval with AWS S3.`,
+		tags: [
+			"FastAPI",
+			"Next.js",
+			"TypeScript",
+			"Python",
+			"Gemini",
+			"Modal",
+			"AWS S3",
+			"Inngest",
+			"WhisperX",
+			"Active Speaker Detection",
+		],
+		githubUrl: "https://github.com/dipenkumarr/hooked-ai",
+		liveUrl: "",
+		imageUrl: "",
+	},
+	{
 		title: "SpotLotto - Event Lottery System",
 		description: `Built an Android application using Java and Firebase to automate event registrations via a fair lottery system, integrating Google ML Kit for QR code scanning and geolocation features.
       Led a 6-member Agile team to design a multi-role user system and implement Firebase Cloud Messaging (FCM) for real-time push notifications, achieving 80% test coverage with JUnit through test-driven development, ensuring robust functionality and reliability.`,
@@ -80,7 +102,7 @@ export const projectsData = [
 		imageUrl: "/SpotLotto.jpeg", // Ensure this image exists in your public folder
 	},
 	{
-		title: "UniWays - Google Hacks Winner",
+		title: "UniWays - GHacks Winner",
 		description: `Led a team of three to develop a full-stack campus navigation web application using Next.js, React, and TypeScript, achieving a 20% reduction in estimated student travel time through Google Maps API integration and real-time route optimization.
       Designed robust REST APIs with Prisma and PostgreSQL, incorporating secure OAuth via Clerk for enhanced user authentication and data protection. Crafted a user-centric, responsive interface with TailwindCSS, utilizing geocoding for precise location mapping.`,
 		tags: [
@@ -116,23 +138,6 @@ export const projectsData = [
 		githubUrl: "https://github.com/dipenkumarr/bloom.ai",
 		liveUrl: "https://bloom-ai-three.vercel.app/",
 		imageUrl: "/bloom_ai.jpeg", // Ensure this image exists in your public folder
-	},
-	{
-		title: "SurfWeb RAG-Based Web Interaction Tool",
-		description: `Developed a web application that allows users to interact with any website by entering its URL, creating searchable indexes, and enabling chat-based queries using a custom vector database and Redis with Upstash.
-      Leveraged Tailwind CSS for UI design and Vercel AI SDK to enhance the user experience, facilitating efficient content retrieval and interaction across diverse websites.`,
-		tags: [
-			"Next.js",
-			"React",
-			"TypeScript",
-			"TailwindCSS",
-			"Vector Database",
-			"Redis",
-			"Vercel AI SDK",
-		],
-		githubUrl: "https://github.com/dipenkumarr/SurfWeb-RAG-LLama",
-		liveUrl: "https://surf-web.vercel.app/",
-		imageUrl: "/SurfWeb.jpeg", // Ensure this image exists in your public folder
 	},
 	{
 		title: "Classification on NotMNIST-RGB and NotMNIST DL using CNN",

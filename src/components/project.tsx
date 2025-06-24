@@ -22,7 +22,7 @@ export default function Project({
 
 	return (
 		<section
-			className="bg-gray-100/20 flex flex-col max-w-[42rem] border border-black/20 overflow-hidden rounded-2xl mt-4 sm:mt-0 h-full hover:bg-gray-200 transition-all dark:bg-white/10 dark:hover:bg-white/15 dark:text-gray-50 dark:border-white/10 cursor-pointer shadow-lg shadow-gray-500/10"
+			className="bg-gray-100/20 flex flex-col max-w-[42rem] border border-black/20 overflow-hidden rounded-2xl mt-4 sm:mt-0 h-full hover:shadow-2xl transition-all dark:bg-white/10 dark:hover:bg-white/15 dark:text-gray-50 dark:border-white/10 cursor-pointer shadow-lg shadow-gray-500/10"
 			onClick={() => setIsModalOpen(true)}
 		>
 			<div className="p-6 sm:p-8 flex flex-col flex-grow">
@@ -114,7 +114,7 @@ function ProjectModal({
 					animate={{ opacity: 1 }}
 					exit={{ opacity: 0 }}
 					transition={{ duration: 0.2 }}
-					className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 z-[1000]"
+					className="fixed inset-0 bg-black/20 backdrop-blur-md flex items-center justify-center p-4 z-[1000]"
 					onClick={onClose}
 				>
 					<motion.div
@@ -122,14 +122,14 @@ function ProjectModal({
 						animate={{ scale: 1, opacity: 1 }}
 						exit={{ scale: 0.95, opacity: 0 }}
 						transition={{ duration: 0.2, ease: "easeOut" }}
-						className="relative max-w-4xl w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-xl p-8 max-h-[90vh] overflow-y-auto shadow-2xl border border-white/20 dark:border-white/10"
+						className="relative max-w-4xl w-full bg-white/70 dark:bg-gray-900/80 backdrop-blur-md rounded-xl p-8 max-h-[90vh] overflow-y-auto shadow-2xl border border-white/20 dark:border-white/10"
 						onClick={(e) => e.stopPropagation()}
 					>
 						<h2 className="text-3xl font-bold mb-6 dark:text-white">
 							{title}
 						</h2>
 
-						<p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+						<p className="text-gray-900 dark:text-gray-300 mb-8 leading-relaxed">
 							{description}
 						</p>
 

@@ -1,20 +1,19 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { forwardRef } from "react";
 
-function BgBlob({
-	className,
-	style,
-	children,
-}: {
-	className: string;
-	style: React.CSSProperties;
-	children?: React.ReactNode;
-}) {
+const BgBlob = forwardRef<
+	HTMLDivElement,
+	{
+		className: string;
+		style: React.CSSProperties;
+		children?: React.ReactNode;
+	}
+>(({ className, style, children }, ref) => {
 	return (
-		<div className={className} style={style}>
+		<div ref={ref} className={className} style={style}>
 			{children}
 		</div>
 	);
-}
+});
 
 export default BgBlob;

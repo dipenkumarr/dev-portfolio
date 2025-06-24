@@ -136,7 +136,7 @@ export default function Intro() {
 				>
 					<Link
 						href="#contact"
-						className="group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none hover:scale-105 active:scale-95 hover:bg-gray-950 transition-all border dark:bg-white/5 border-black/20 dark:border-white/30 shadow-sm"
+						className="group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none hover:scale-105 active:scale-95 hover:bg-gray-950 transition-all border-2 dark:bg-white/5 border-black/20 dark:border-white/30 shadow-sm"
 						onClick={() => {
 							setActiveSection("Contact");
 							setTimeOfLastClick(Date.now());
@@ -147,7 +147,7 @@ export default function Intro() {
 					</Link>
 
 					<a
-						className="group bg-white-900 text-black px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none hover:scale-105 active:scale-95 hover:bg-white-950 transition-all border dark:bg-white/5 border-black/20 dark:border-white/30 dark:text-white shadow-sm"
+						className="group bg-white/20 text-black px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none hover:scale-105 active:scale-95 hover:bg-white-950 transition-all border-2 dark:bg-white/5 border-black/20 dark:border-white/30 dark:text-white shadow-sm"
 						href="/Dipen_Resume.pdf"
 						download
 					>
@@ -157,7 +157,7 @@ export default function Intro() {
 
 					<div className="flex gap-3">
 						<a
-							className="bg-white text-black text-2xl border border-black/20 p-4 flex items-center justify-center gap-2 rounded-full cursor-pointer outline-none hover:scale-110 active:scale-100 transition-all dark:bg-white/5 dark:text-gray-50 dark:border-white/30 shadow-sm"
+							className="bg-white/20 text-black text-2xl border-2 border-black/20 p-4 flex items-center justify-center gap-2 rounded-full cursor-pointer outline-none hover:scale-110 active:scale-100 transition-all dark:bg-white/5 dark:text-gray-50 dark:border-white/30 shadow-sm"
 							href="https://linkedin.com/in/dipen-kumar"
 							target="_blank"
 						>
@@ -165,7 +165,7 @@ export default function Intro() {
 						</a>
 
 						<a
-							className="bg-white text-black text-2xl border border-black/20 p-4 flex items-center justify-center gap-2 rounded-full cursor-pointer outline-none hover:scale-110 active:scale-100 transition-all dark:bg-white/5 dark:text-gray-50 dark:border-white/30 shadow-sm"
+							className="bg-white/20 text-black text-2xl border-2 border-black/20 p-4 flex items-center justify-center gap-2 rounded-full cursor-pointer outline-none hover:scale-110 active:scale-100 transition-all dark:bg-white/5 dark:text-gray-50 dark:border-white/30 shadow-sm"
 							href="https://github.com/dipenkumarr"
 							target="_blank"
 						>

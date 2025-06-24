@@ -50,11 +50,11 @@ export default function Contacts() {
 					required
 					maxLength={500}
 					name="senderEmail"
-					className="h-14 p-4 rounded-xl border border-black/10 outline-black dark:bg-white/85 dark:focus:bg-white transition-all dark:outline-none font-sf-pro-expanded-regular"
+					className="h-14 p-4 rounded-xl border-2 border-black/30 bg-inherit outline-gray-700 dark:bg-inherit dark:focus:outline-2 transition-all dark:border-white/60 dark:text-gray-100 font-sf-pro-expanded-regular"
 					placeholder="Your Email"
 				/>
 				<textarea
-					className="min-h-52 max-h-96 my-3 px-4 rounded-xl border border-black/10 p-4 outline-black dark:bg-white/85 dark:focus:bg-white transition-all dark:outline-none font-sf-pro-expanded-regular"
+					className="min-h-52 max-h-96 my-3 px-4 rounded-xl border-2 bg-inherit border-black/30 p-4 outline-gray-700 dark:bg-inherit dark:focus:outline-2 transition-all dark:border-white/60 dark:text-gray-100 font-sf-pro-expanded-regular"
 					placeholder="Your Message"
 					required
 					maxLength={5000}
