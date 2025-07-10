@@ -12,6 +12,7 @@ import React, { useEffect, useState } from "react";
 import BgBlob from "@/components/BgBlob";
 import ParallaxBlobs from "@/components/ParallaxBlobs";
 import Head from "next/head";
+import FontLoader from "@/components/font-loader";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -89,12 +90,14 @@ export default function RootLayout({
 
 				<ThemeContextProvider>
 					<ActiveSectionContextProvider>
-						<Header />
-						{children}
-						<Footer />
-						<Toaster position="top-right" />
-						<ThemeSwitch />
-						<Analytics />
+						<FontLoader>
+							<Header />
+							{children}
+							<Footer />
+							<Toaster position="top-right" />
+							<ThemeSwitch />
+							<Analytics />
+						</FontLoader>
 					</ActiveSectionContextProvider>
 				</ThemeContextProvider>
 			</body>
