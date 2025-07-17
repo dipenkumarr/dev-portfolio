@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
@@ -9,12 +8,12 @@ import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
 export default function Contacts() {
-	const { ref } = useSectionInView("Contact");
+	const { ref } = useSectionInView("About & Contact");
 
 	return (
 		<motion.section
 			id="contact"
-			className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center scroll-mt-28"
+			className="w-full text-center scroll-mt-28"
 			initial={{ opacity: 0, y: 50 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.5 }}
@@ -22,7 +21,7 @@ export default function Contacts() {
 			ref={ref}
 		>
 			<SectionHeading>Contact Me</SectionHeading>
-			<p className="text-gray-700 sm:text-lg -mt-3 dark:text-white/80">
+			<p className="text-gray-700 sm:text-lg mt-6 mb-10 dark:text-white/80">
 				Please contact me directly at{" "}
 				<a
 					href="mailto:dipenkum@ualberta.ca"
@@ -30,11 +29,10 @@ export default function Contacts() {
 				>
 					dipenkum@ualberta.ca
 				</a>{" "}
-				or through the form below.{" "}
+				or through the form below.
 			</p>
-
 			<form
-				className="mt-10 flex flex-col dark:text-black/80"
+				className="flex flex-col space-y-3 dark:text-black/80"
 				action={async (FormData) => {
 					const { data, error } = await sendEmail(FormData);
 					if (error) {
@@ -54,7 +52,7 @@ export default function Contacts() {
 					placeholder="Your Email"
 				/>
 				<textarea
-					className="min-h-52 max-h-96 my-3 px-4 rounded-xl border-2 bg-inherit border-black/30 p-4 outline-gray-700 dark:bg-inherit dark:focus:outline-2 transition-all dark:border-white/60 dark:text-gray-100 font-sf-pro-expanded-regular"
+					className="min-h-52 max-h-96 p-4 rounded-xl border-2 bg-inherit border-black/30 outline-gray-700 dark:bg-inherit dark:focus:outline-2 transition-all dark:border-white/60 dark:text-gray-100 font-sf-pro-expanded-regular resize-none"
 					placeholder="Your Message"
 					required
 					maxLength={5000}
