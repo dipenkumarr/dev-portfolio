@@ -19,7 +19,7 @@ export default function Skills() {
 			ref={ref}
 		>
 			<SectionHeading>Skills</SectionHeading>
-			<ul className="flex gap-3 flex-wrap justify-center text-lg text-gray-800 ">
+			<ul className="flex gap-3 flex-wrap justify-center text-base md:text-lg text-gray-800 ">
 				{skillsData.map((skill, index) => (
 					<li
 						key={index}

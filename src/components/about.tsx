@@ -9,14 +9,15 @@ export default function About() {
 	return (
 		<motion.section
 			className="w-full text-center leading-8 text-base md:text-xl scroll-mt-28"
-			initial={{ opacity: 0, y: 100 }}
-			animate={{ opacity: 1, y: 0 }}
-			transition={{ delay: 0.5 }}
+			initial={{ opacity: 0, y: 50 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.5 }}
+			viewport={{ once: true }}
 			id="about"
 			ref={ref}
 		>
 			<SectionHeading>About Me</SectionHeading>
-			<div className="space-y-4 mt-6 text-sm md:text-base text-justify">
+			<div className="space-y-4 mt-6 text-base md:text-base text-justify">
 				<p>
 					Hello! I&apos;m{" "}
 					<span className="font-medium">Dipen Kumar Maheshwari</span>,

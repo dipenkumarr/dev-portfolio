@@ -23,7 +23,7 @@ export default function Header() {
 
 			{/* Mobile menu button */}
 			<button
-				className="lg:hidden fixed top-3 right-4 z-[1000] p-2 text-gray-700 dark:text-gray-300 bg-white/80 dark:bg-gray-950/80 rounded-full backdrop-blur-sm"
+				className="lg:hidden fixed top-3 right-4 z-[1000] p-2 text-gray-700 dark:text-gray-300 rounded-full backdrop-blur-sm"
 				onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 			>
 				{isMobileMenuOpen ? <HiX size={24} /> : <HiMenu size={24} />}

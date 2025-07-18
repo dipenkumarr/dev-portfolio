@@ -52,7 +52,7 @@ export default function Contacts() {
 					placeholder="Your Email"
 				/>
 				<textarea
-					className="min-h-52 max-h-96 p-4 rounded-xl border-2 bg-inherit border-black/30 outline-gray-700 dark:bg-inherit dark:focus:outline-2 transition-all dark:border-white/60 dark:text-gray-100 font-sf-pro-expanded-regular resize-none"
+					className="min-h-52 max-h-80 p-4 rounded-xl border-2 bg-inherit border-black/30 outline-gray-700 dark:bg-inherit dark:focus:outline-2 transition-all dark:border-white/60 dark:text-gray-100 font-sf-pro-expanded-regular resize-y"
 					placeholder="Your Message"
 					required
 					maxLength={5000}
