@@ -32,3 +32,50 @@ body {
 	font-weight: 700;
 	font-stretch: expanded;
 }
+
+/* Base polish */
+@layer base {
+	* {
+		@apply antialiased;
+	}
+	html {
+		@apply scroll-smooth;
+	}
+	body {
+		@apply transition-colors duration-300 ease-in-out; /* smooth theme switching */
+	}
+	::selection {
+		@apply bg-black/10 dark:bg-white/20 text-inherit;
+	}
+}
+
+/* Reusable glassmorphism + UI tokens */
+@layer components {
+	.glass {
+		@apply bg-white/50 dark:bg-white/10 backdrop-blur-md border border-white/40 dark:border-white/10 shadow-xl shadow-black/[0.03] rounded-2xl;
+	}
+	.glass-hover {
+		@apply hover:bg-white/60 dark:hover:bg-white/15 transition-colors;
+	}
+	.glass-soft {
+		@apply bg-white/30 dark:bg-white/5 backdrop-blur-md border border-white/30 dark:border-white/10 shadow-lg rounded-xl;
+	}
+	.btn-primary {
+		@apply px-7 py-3 rounded-full font-medium glass bg-gray-900/90 text-white dark:bg-white/10 dark:text-white border border-black/10 dark:border-white/10 hover:shadow-2xl hover:scale-[1.02] active:scale-95 transition-all;
+	}
+	.btn-secondary {
+		@apply px-7 py-3 rounded-full font-medium glass-soft text-gray-900 dark:text-white hover:shadow-xl hover:scale-[1.02] active:scale-95 transition-all;
+	}
+	.icon-btn {
+		@apply w-12 h-12 rounded-full grid place-items-center glass-soft text-gray-900 dark:text-white hover:scale-110 active:scale-95 transition-all;
+	}
+	.chip {
+		@apply px-3 py-1 rounded-full glass-soft text-sm uppercase tracking-wide text-gray-800 dark:text-white/90;
+	}
+	.card {
+		@apply glass p-6 sm:p-8 border border-white/30 dark:border-white/10;
+	}
+	.heading-2 {
+		@apply text-3xl sm:text-4xl font-semibold tracking-tight text-center;
+	}
+}

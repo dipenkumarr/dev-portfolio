@@ -29,41 +29,17 @@ const sfPro = localFont({
 });
 
 export const metadata = {
-	title: "Dipen | Software Developer & CS Student",
-	description:
-		"Dipen is a Computer Science student and Software Developer specializing in building modern web applications with React, Next.js, and Node.js.",
-	keywords: [
-		"Dipen",
-		"Full Stack Developer",
-		"Web Developer",
-		"Computer Science",
-		"React",
-		"Next.js",
-		"Portfolio",
-		"Software Developer",
-		"Machine Learning",
-	],
-	authors: [{ name: "Dipen" }],
-	metadataBase: new URL("https://dipen-kumar-portfolio.vercel.app/"),
-	alternates: {
-		canonical: "/",
-	},
+	title: "Dipen Kumar — Software Developer",
+	description: "Software developer and CS student building web and ML stuff.",
+	metadataBase: new URL("https://dipenkumar.vercel.app"),
+	alternates: { canonical: "/" },
 	openGraph: {
-		title: "Dipen | Software Developer & CS Student",
+		title: "Dipen Kumar — Software Developer",
 		description:
-			"Dipen is a Computer Science student and Full Stack Developer specializing in building modern web applications with React, Next.js, and Node.js.",
-		url: "https://dipen-kumar-portfolio.vercel.app/",
-		siteName: "Dipen&apos;s Portfolio",
-		locale: "en_US",
+			"Software developer and CS student building web and ML stuff.",
+		url: "https://dipenkumar.vercel.app/",
+		siteName: "Dipen Kumar",
 		type: "website",
-		images: [
-			{
-				url: "/public/intro-image.png",
-				width: 1200,
-				height: 630,
-				alt: "Dipen's Portfolio",
-			},
-		],
 	},
 };
 
@@ -82,6 +58,7 @@ export default function RootLayout({
 					type="font/ttf"
 					crossOrigin="anonymous"
 				/>
+				<link rel="icon" href="/icon.png" />
 			</Head>
 			<body
 				className={`font-sf-pro-expanded-regular bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 overscroll-none dark:bg-gray-950 dark:text-gray-50 dark:text-opacity-90`}
