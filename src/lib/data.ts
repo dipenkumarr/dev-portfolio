@@ -59,6 +59,24 @@ export const experiencesData = [
 
 export const projectsData = [
 	{
+		title: "Slacked - CI/CD Notifier",
+		description:
+			"Engineered a decoupled, serverless notification microservice that delivers real-time Jenkins build status updates to Slack. Designed an event-driven AWS architecture with Lambda + API Gateway, provisioned entirely via AWS CDK (Infrastructure-as-Code). Securely manages Slack tokens in AWS Secrets Manager.",
+		tags: [
+			"Go",
+			"AWS Lambda",
+			"API Gateway",
+			"AWS Secrets Manager",
+			"AWS CDK",
+			"Slack API",
+			"Jenkins",
+			"Infrastructure as Code",
+		],
+		githubUrl: "https://github.com/dipenkumarr/slacked",
+		liveUrl: "",
+		imageUrl: "",
+	},
+	{
 		title: "Hooked/ai",
 		description: `Built a production-ready, full-stack platform that transforms long-form podcasts into viral short-form videos using a modular AI pipeline.
         Integrated WhisperX for speech-to-text transcription, Cohere Command A for semantic analysis and viral moment detection, and Active Speaker Detection for auto-cropping around the speaker's face.
@@ -149,23 +167,23 @@ export const projectsData = [
 		liveUrl: "",
 		imageUrl: "/CNN.jpeg", // Ensure this image exists in your public folder
 	},
-	{
-		title: "AudioScribe",
-		description: `Developed a dynamic web application leveraging React and Web Workers for real-time audio transcription and translation, utilizing advanced NLP models from Hugging Face for accurate and efficient language processing.
-      Designed a user-friendly interface with responsive design, allowing users to easily transcribe and translate audio content with minimal delay and maximum accuracy.`,
-		tags: [
-			"React",
-			"HTML",
-			"CSS",
-			"Tailwind CSS",
-			"Hugging Face Models",
-			"Transformers",
-			"NLP",
-		],
-		githubUrl: "https://github.com/dipenkumarr/AudioScribe",
-		liveUrl: "https://audio-scribe.vercel.app/",
-		imageUrl: "/AudioScribe.jpeg", // Ensure this image exists in your public folder
-	},
+	// {
+	// 	title: "AudioScribe",
+	// 	description: `Developed a dynamic web application leveraging React and Web Workers for real-time audio transcription and translation, utilizing advanced NLP models from Hugging Face for accurate and efficient language processing.
+	//   Designed a user-friendly interface with responsive design, allowing users to easily transcribe and translate audio content with minimal delay and maximum accuracy.`,
+	// 	tags: [
+	// 		"React",
+	// 		"HTML",
+	// 		"CSS",
+	// 		"Tailwind CSS",
+	// 		"Hugging Face Models",
+	// 		"Transformers",
+	// 		"NLP",
+	// 	],
+	// 	githubUrl: "https://github.com/dipenkumarr/AudioScribe",
+	// 	liveUrl: "https://audio-scribe.vercel.app/",
+	// 	imageUrl: "/AudioScribe.jpeg", // Ensure this image exists in your public folder
+	// },
 	// {
 	// 	title: "BlogSpot",
 	// 	description:
