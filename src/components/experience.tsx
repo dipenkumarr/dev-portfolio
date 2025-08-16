@@ -15,15 +15,15 @@ export default function Experience() {
     return (
         <motion.section
             id="experience"
-            className="scroll-mt-28 mb-28 sm:mb-40 mx-4 sm:mx-16"
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            className="scroll-mt-32 mb-28 sm:mb-40 mx-4 sm:mx-16"
+            initial={{ opacity: 0, scale: 0.98 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{
                 type: "spring",
                 stiffness: 70,
                 damping: 16,
                 mass: 0.7,
-                ease: "easeInOut"
+                ease: "easeInOut",
             }}
             viewport={{ once: true }}
             ref={ref}
@@ -54,7 +54,6 @@ export default function Experience() {
 function ExperienceItem({ item }: { item: any }) {
     const [isExpanded, setIsExpanded] = React.useState(false);
 
-    // Split description into main and additional parts, with fallback
     const words = (item.description ?? "").split(" ");
     const maxWords = 20;
     const hasMoreContent = words.length > maxWords;
@@ -62,14 +61,13 @@ function ExperienceItem({ item }: { item: any }) {
     const mainDescription = hasMoreContent
         ? words.slice(0, maxWords).join(" ")
         : item.description ?? "";
-
     const additionalDescription = hasMoreContent
         ? words.slice(maxWords).join(" ")
         : "";
 
     return (
         <motion.div
-            className="group relative pl-8 border-l-2 border-gray-200 dark:border-gray-700"
+            className="group relative pl-5" // ← removed border/dot, kept pl-5 for accent
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -77,26 +75,14 @@ function ExperienceItem({ item }: { item: any }) {
                 stiffness: 70,
                 damping: 16,
                 mass: 0.7,
-                ease: "easeInOut"
+                ease: "easeInOut",
             }}
         >
-            {/* Timeline dot */}
-            <motion.div
-                className="absolute w-4 h-4 bg-gray-200 rounded-full -left-[9px] top-0 dark:bg-gray-600"
-                initial={{ scale: 0.7, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{
-                    type: "spring",
-                    stiffness: 90,
-                    damping: 18,
-                    mass: 0.7,
-                    ease: "easeInOut"
-                }}
-            />
+            {/* Minimal accent line */}
+            <div className="absolute left-0 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-700 rounded-full group-hover:bg-gray-400 dark:group-hover:bg-gray-500 transition-colors" />
 
             {/* Flex container for icon and text */}
             <div className="flex items-center gap-4 mb-2">
-                {/* Logo container */}
                 <motion.span
                     className="flex-shrink-0"
                     initial={{ scale: 0.8, opacity: 0 }}
@@ -106,7 +92,7 @@ function ExperienceItem({ item }: { item: any }) {
                         stiffness: 80,
                         damping: 18,
                         mass: 0.7,
-                        ease: "easeInOut"
+                        ease: "easeInOut",
                     }}
                 >
                     <Image
@@ -119,7 +105,6 @@ function ExperienceItem({ item }: { item: any }) {
                     />
                 </motion.span>
 
-                {/* Text content container */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -128,7 +113,7 @@ function ExperienceItem({ item }: { item: any }) {
                         stiffness: 70,
                         damping: 16,
                         mass: 0.7,
-                        ease: "easeInOut"
+                        ease: "easeInOut",
                     }}
                 >
                     <h3 className="font-semibold text-lg">{item.title}</h3>
@@ -151,7 +136,7 @@ function ExperienceItem({ item }: { item: any }) {
                     stiffness: 70,
                     damping: 16,
                     mass: 0.7,
-                    ease: "easeInOut"
+                    ease: "easeInOut",
                 }}
             >
                 <p>
@@ -170,18 +155,19 @@ function ExperienceItem({ item }: { item: any }) {
                                     stiffness: 80,
                                     damping: 13,
                                     mass: 0.2,
-                                    ease: "easeInOut"
+                                    ease: "easeInOut",
                                 }}
                                 style={{ display: "block", overflow: "hidden" }}
                             >
-                                {" "}{additionalDescription}
+                                {" "}
+                                {additionalDescription}
                             </motion.span>
                         )}
                     </AnimatePresence>
                 </p>
             </motion.div>
 
-            {/* Toggle button - only show if there's more content */}
+            {/* Toggle button */}
             {hasMoreContent && (
                 <motion.div
                     className="mt-3"
@@ -192,22 +178,19 @@ function ExperienceItem({ item }: { item: any }) {
                         stiffness: 70,
                         damping: 16,
                         mass: 0.7,
-                        ease: "easeInOut"
+                        ease: "easeInOut",
                     }}
                 >
                     <button
                         onClick={() => setIsExpanded(!isExpanded)}
-                        className="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-300 font-medium flex items-center gap-1 transition-colors"
+                        className="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-300 font-medium flex items-center gap-1 transition-colors font-sf-pro-expanded-bold"
                         aria-expanded={isExpanded}
-                        aria-label={
-                            isExpanded
-                                ? "Show less content"
-                                : "Show more content"
-                        }
+                        aria-label={isExpanded ? "Show less content" : "Show more content"}
                     >
                         {isExpanded ? "Show less" : "Show more"}
                         <svg
-                            className={`w-4 h-4 transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
+                            className={`w-4 h-4 transition-transform duration-200 ${isExpanded ? "rotate-180" : ""
+                                }`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"

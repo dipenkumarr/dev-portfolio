@@ -26,10 +26,10 @@ export default function Skills() {
     };
     return (
         <motion.section
-            className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+            className="mb-28 max-w-[53rem] scroll-mt-32 text-center sm:mb-40"
             id="skills"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.98 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ type: "spring", stiffness: 70, damping: 16, mass: 0.8, ease: "easeInOut" }}
             viewport={{ once: true }}
             ref={ref}

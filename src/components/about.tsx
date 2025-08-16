@@ -8,9 +8,9 @@ export default function About() {
 
     return (
         <motion.section
-            className="w-full text-center leading-8 text-base md:text-xl scroll-mt-28"
-            initial={{ opacity: 0, y: 50, scale: 0.98 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            className="w-full text-center leading-8 text-base md:text-xl scroll-mt-32"
+            initial={{ opacity: 0, scale: 0.98 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{
                 type: "spring",
                 stiffness: 70,
@@ -37,61 +37,45 @@ export default function About() {
                 viewport={{ once: true }}
             >
                 <p>
-                    Hello! I&apos;m{" "}
-                    <span className="font-medium">Dipen Kumar Maheshwari</span>,
-                    a Computer Science Honors student at the University of
-                    Alberta and currently a{" "}
-                    <span className="font-medium">
-                        Machine Learning Engineer Intern
-                    </span>{" "}
-                    at SAP.
+                    Hi, I&apos;m{" "}
+                    <span className="font-medium">Dipen Kumar Maheshwari</span>, a Computer
+                    Science Honors student at the University of Alberta and currently a{" "}
+                    <span className="font-medium">Machine Learning Engineer Intern</span> at SAP.
                 </p>
                 <p>
-                    At SAP, I&apos;m developing an{" "}
-                    <span className="font-medium">
-                        unsupervised NLP model using transformers like SBERT
-                    </span>{" "}
-                    to automate ticket categorization, aiming to significantly
-                    reduce approval times. My previous experience as a{" "}
-                    <span className="font-medium">
-                        Software/Research Intern
-                    </span>{" "}
-                    at the University of Alberta involved containerizing
-                    autonomous navigation systems with{" "}
-                    <span className="font-medium">Docker</span>, which cut setup
-                    time by 50%, and refactoring C++/Python code in{" "}
-                    <span className="font-medium">ROS</span>.
+                    My work focuses on combining{" "}
+                    <span className="font-medium">software engineering</span> with{" "}
+                    <span className="font-medium">applied machine learning</span>. At SAP, I build{" "}
+                    <span className="font-medium">NLP and retrieval pipelines</span> that
+                    streamline enterprise workflows, while my past internship centered on
+                    optimizing robotics systems with{" "}
+                    <span className="font-medium">Docker</span> and{" "}
+                    <span className="font-medium">ROS</span>. Beyond internships, I&apos;ve built
+                    projects ranging from{" "}
+                    <span className="font-medium">full-stack applications</span> to{" "}
+                    <span className="font-medium">AI-driven platforms</span>.
                 </p>
                 <p>
-                    My technical skills include{" "}
+                    I enjoy working across the stack, from{" "}
+                    <span className="font-medium">backend development</span> and{" "}
+                    <span className="font-medium">cloud infrastructure</span> to{" "}
+                    <span className="font-medium">applied ML</span>. My technical toolkit includes{" "}
                     <span className="font-medium">
-                        Python, Java, JavaScript/TypeScript, C++, and Go
+                        Python, TypeScript, Go, Java, and C/C++
                     </span>
                     , along with frameworks like{" "}
-                    <span className="font-medium">
-                        PyTorch, React, and Next.js
-                    </span>
-                    . I have hands-on experience building full-stack
-                    applications (like{" "}
-                    <span className="font-medium">UniWays</span> and{" "}
-                    <span className="font-medium">Bloom.ai</span>), implementing
-                    ML models, working with databases (SQL/NoSQL), and utilizing
-                    tools like <span className="font-medium">Docker</span> and{" "}
-                    <span className="font-medium">Azure Databricks</span>.
+                    <span className="font-medium">PyTorch, React, and Next.js</span>.
                 </p>
                 <p>
-                    I am actively seeking internship opportunities for{" "}
+                    I&apos;m currently exploring internship opportunities for{" "}
+                    <span className="font-bold underline">Winter 2026 or Summer 2026</span> in{" "}
                     <span className="font-medium">
-                        Fall 2025 or Winter/Summer 2026
+                        Software Engineering, Machine Learning, or Data Science
                     </span>{" "}
-                    in{" "}
-                    <span className="font-medium">
-                        Software Engineering, Machine Learning Engineering, or
-                        Data Science
-                    </span>{" "}
-                    where I can apply my skills in AI and software development
-                    to contribute to meaningful projects.
+                    where I can continue solving problems at the intersection of{" "}
+                    <span className="font-medium">AI and software systems</span>.
                 </p>
+
             </motion.div>
         </motion.section>
     );

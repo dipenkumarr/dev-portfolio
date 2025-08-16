@@ -30,8 +30,8 @@ export default function Projects() {
         <motion.section
             id="projects"
             className="scroll-mt-32 mb-28"
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.98 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{
                 type: "spring",
                 stiffness: 70,

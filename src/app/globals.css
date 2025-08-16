@@ -33,19 +33,21 @@ body {
 	font-stretch: expanded;
 }
 
-html,
-body,
-* {
-	transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out,
-		border-color 0.25s ease-in-out !important;
-}
 /* Base polish */
 @layer base {
 	* {
 		@apply antialiased;
 	}
 	html {
-		@apply scroll-smooth;
+		scroll-behavior: smooth;
+	}
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+	}
+	:target {
+		scroll-margin-top: 8rem; /* roughly header height + padding */
 	}
 	body {
 		@apply transition-colors duration-300 ease-in-out; /* smooth theme switching */
@@ -80,6 +82,10 @@ body,
 	}
 	.card {
 		@apply glass p-6 sm:p-8 border border-white/30 dark:border-white/10;
+	}
+	.blob-optim {
+		@apply transform-gpu will-change-transform;
+		contain: paint;
 	}
 	.heading-2 {
 		@apply text-3xl sm:text-4xl font-semibold tracking-tight text-center;

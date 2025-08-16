@@ -13,9 +13,9 @@ export default function Contacts() {
     return (
         <motion.section
             id="contact"
-            className="w-full text-center scroll-mt-28"
-            initial={{ opacity: 0, y: 50, scale: 0.98 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            className="w-full text-center scroll-mt-32"
+            initial={{ opacity: 0, scale: 0.98 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{
                 type: "spring",
                 stiffness: 70,
