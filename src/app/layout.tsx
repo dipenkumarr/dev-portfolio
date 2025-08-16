@@ -72,8 +72,11 @@ export default function RootLayout({
 							{children}
 							<Footer />
 							<Toaster position="top-right" />
-							<ThemeSwitch />
 							<Analytics />
+							{/* Show floating theme button only on small screens */}
+							<div className="block lg:hidden">
+								<ThemeSwitch variant="floating" />
+							</div>
 						</FontLoader>
 					</ActiveSectionContextProvider>
 				</ThemeContextProvider>

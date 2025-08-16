@@ -21,6 +21,21 @@ export default function ThemeContextProvider({
 	const [theme, setTheme] = useState<Theme>("light");
 
 	const toggleTheme = () => {
+		// Check if View Transitions API is supported
+		if (
+			typeof document !== "undefined" &&
+			"startViewTransition" in document
+		) {
+			(document as any).startViewTransition(() => {
+				updateTheme();
+			});
+		} else {
+			// Fallback for browsers that don't support View Transitions
+			updateTheme();
+		}
+	};
+
+	const updateTheme = () => {
 		if (theme === "light") {
 			setTheme("dark");
 			window.localStorage.setItem("theme", "dark");
